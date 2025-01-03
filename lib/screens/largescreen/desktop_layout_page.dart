@@ -56,32 +56,35 @@ class _DesktopLayoutState extends State<DesktopLayout> {
               Container(
                 margin: EdgeInsets.symmetric(horizontal: size.width * 0.05),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     CountWidget(
                       size: size,
-                      text1: "14",
+                      text1: "3",
                       text2: "Years of",
                       text3: "Experience",
                     ),
+                    const SizedBox(
+                      width: 50,
+                    ),
                     CountWidget(
                       size: size,
-                      text1: "50+",
+                      text1: "6+",
                       text2: "Projects",
                       text3: "Completed",
                     ),
-                    CountWidget(
-                      size: size,
-                      text1: "1.5K",
-                      text2: "Happy",
-                      text3: "Customers",
-                    ),
-                    CountWidget(
-                      size: size,
-                      text1: "1M",
-                      text2: "Awesome",
-                      text3: "Reviews",
-                    ),
+                    // CountWidget(
+                    //   size: size,
+                    //   text1: "1.5K",
+                    //   text2: "Happy",
+                    //   text3: "Customers",
+                    // ),
+                    // CountWidget(
+                    //   size: size,
+                    //   text1: "1M",
+                    //   text2: "Awesome",
+                    //   text3: "Reviews",
+                    // ),
                   ],
                 ),
               ),

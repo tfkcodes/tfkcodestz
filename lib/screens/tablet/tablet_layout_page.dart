@@ -70,7 +70,7 @@ class _TabletLayoutState extends State<TabletLayout> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      CountWidget(size: size,text1: "14",text2: "Years of",text3: "Experience",),
+                      CountWidget(size: size,text1: "4",text2: "Years of",text3: "Experience",),
                       const SizedBox(height: 20,),
                       Divider(
                         color: AppColors.paleSlate,
@@ -80,7 +80,7 @@ class _TabletLayoutState extends State<TabletLayout> {
                       ),
 
                       const SizedBox(height: 20,),
-                      CountWidget(size: size,text1: "50+",text2: "Projects",text3: "Completed",),
+                      CountWidget(size: size,text1: "6+",text2: "Projects",text3: "Completed",),
                       const SizedBox(height: 20,),
                       Divider(
                         color: AppColors.paleSlate,
@@ -89,18 +89,18 @@ class _TabletLayoutState extends State<TabletLayout> {
 
                       ),
 
-                      const SizedBox(height: 20,),
-                      CountWidget(size: size,text1: "1.5K",text2: "Happy",text3: "Customers",),
-                      const SizedBox(height: 20,),
-                      Divider(
-                        color: AppColors.paleSlate,
-                        indent: size.width*0.05,
-                        endIndent: size.width*0.05,
+                      // const SizedBox(height: 20,),
+                      // CountWidget(size: size,text1: "1.5K",text2: "Happy",text3: "Customers",),
+                      // const SizedBox(height: 20,),
+                      // Divider(
+                      //   color: AppColors.paleSlate,
+                      //   indent: size.width*0.05,
+                      //   endIndent: size.width*0.05,
 
-                      ),
+                      // ),
 
-                      const SizedBox(height: 20,),
-                      CountWidget(size: size,text1: "1M",text2: "Awesome",text3: "Reviews",),
+                      // const SizedBox(height: 20,),
+                      // CountWidget(size: size,text1: "1M",text2: "Awesome",text3: "Reviews",),
 
                     ],
                   ),

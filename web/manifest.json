@@ -1,11 +1,11 @@
 {
-    "name": "Oladapo Olatubosun's Portfolio",
-    "short_name": "Dapo's Portfolio",
+    "name": "porfolio",
+    "short_name": "porfolio",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Oladapo Olatubosun's Portfolio",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
