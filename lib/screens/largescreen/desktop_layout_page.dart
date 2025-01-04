@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
 import 'package:porfolio/constants/styles.dart';
 import 'package:porfolio/screens/widgets/count_container_widget.dart';
+import 'package:porfolio/screens/widgets/custom_tab%20bar.dart';
 import 'package:porfolio/screens/widgets/header_text_widget.dart';
 import 'package:porfolio/screens/widgets/myservice_widgets.dart';
 import 'package:porfolio/screens/widgets/rotating_image_widget.dart';
@@ -14,7 +15,22 @@ class DesktopLayout extends StatefulWidget {
   State<DesktopLayout> createState() => _DesktopLayoutState();
 }
 
-class _DesktopLayoutState extends State<DesktopLayout> {
+class _DesktopLayoutState extends State<DesktopLayout>
+    with SingleTickerProviderStateMixin {
+  late TabController _tabController;
+
+  @override
+  void initState() {
+    _tabController = TabController(length: 4, vsync: this);
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -122,6 +138,24 @@ class _DesktopLayoutState extends State<DesktopLayout> {
                       height: size.height * 0.05,
                     ),
                     MyServicesWidget(size: size),
+                  ],
+                ),
+              ),
+              Container(
+                width: size.width,
+                padding: EdgeInsets.symmetric(vertical: size.width * 0.05),
+                child: Column(
+                  children: [
+                    GradientTextWidget(
+                      size: size,
+                      text1: "My Recent Projects",
+                    ),
+                    SizedBox(
+                      height: size.height * 0.06,
+                    ),
+                    CustomTabBar(
+                      tabController: _tabController,
+                    ),
                   ],
                 ),
               )
