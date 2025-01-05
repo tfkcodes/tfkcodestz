@@ -17,7 +17,7 @@ class CustomTabBar extends StatelessWidget {
         color: AppColors.ebony,
       ),
       child: TabBar(
-        tabs: [
+        tabs: const [
           Tab(
             text: "All",
           ),
@@ -58,7 +58,7 @@ class AllProjects extends StatelessWidget {
     return Container(
       child: Center(
         child: GridView(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             mainAxisSpacing: 10,
             crossAxisSpacing: 10,
@@ -66,7 +66,8 @@ class AllProjects extends StatelessWidget {
           ),
           children: [
             Container(
-              child: Center(
+              color: Colors.white,
+              child: const Center(
                 child: Text("data"),
               ),
             ),
