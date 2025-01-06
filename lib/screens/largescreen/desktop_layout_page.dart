@@ -21,7 +21,7 @@ class _DesktopLayoutState extends State<DesktopLayout>
 
   @override
   void initState() {
-    _tabController = TabController(length: 4, vsync: this);
+    _tabController = TabController(length: 3, vsync: this);
     super.initState();
   }
 
@@ -158,7 +158,13 @@ class _DesktopLayoutState extends State<DesktopLayout>
                     ),
                   ],
                 ),
-              )
+              ),
+              Container(
+                height: size.height,
+                child:  CustomTabBarView(
+                  tabController: _tabController,
+                ),
+              ),
             ],
           ),
         ),
