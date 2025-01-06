@@ -159,12 +159,16 @@ class _DesktopLayoutState extends State<DesktopLayout>
                   ],
                 ),
               ),
-              Container(
-                height: size.height,
-                child:  CustomTabBarView(
-                  tabController: _tabController,
-                ),
+              SizedBox(
+                // height: size.height,
+                child: AllProjects(size: size),
               ),
+              // Container(
+              //   height: size.height,
+              //   child: CustomTabBarView(
+              //     tabController: _tabController,
+              //   ),
+              // ),
             ],
           ),
         ),

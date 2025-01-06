@@ -18,6 +18,16 @@ class CustomTabBar extends StatelessWidget {
         color: AppColors.ebony,
       ),
       child: TabBar(
+        dividerColor: Colors.transparent,
+        indicator: BoxDecoration(
+          color: Colors.purple,
+          borderRadius: BorderRadius.circular(20),
+        ),
+        indicatorSize: TabBarIndicatorSize.tab,
+        labelStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        labelColor: Colors.white,
+        unselectedLabelColor: Colors.grey,
+        labelPadding: const EdgeInsets.symmetric(horizontal: 20),
         controller: tabController,
         tabs: const [
           Tab(
@@ -46,6 +56,12 @@ class CustomTabBarView extends StatelessWidget {
       AllProjects(
         size: size,
       ),
+      AllProjects(
+        size: size,
+      ),
+      AllProjects(
+        size: size,
+      ),
     ]);
   }
 }
@@ -57,16 +73,23 @@ class AllProjects extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.symmetric(horizontal: size.width * 0.10),
+      padding: const EdgeInsets.all(20),
       child: Center(
         child: GridView(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
-            mainAxisSpacing: 10,
-            crossAxisSpacing: 10,
+            mainAxisSpacing: 30,
+            crossAxisSpacing: 30,
             childAspectRatio: 3 / 3,
           ),
           children: [
-            ProjectCard(),
+            const ProjectCard(),
+            const ProjectCard(),
+            const ProjectCard(),
+            const ProjectCard(),
           ],
         ),
       ),
