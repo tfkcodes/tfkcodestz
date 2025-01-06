@@ -10,4 +10,13 @@ class Styles {
       ],
     ),
   );
+
+  static const BoxDecoration drawerDecoration = BoxDecoration(
+    gradient: LinearGradient(
+      colors: [
+        AppColors.studio,
+        AppColors.ebony,
+      ],
+    ),
+  );
 }

@@ -85,11 +85,11 @@ class AllProjects extends StatelessWidget {
             crossAxisSpacing: 30,
             childAspectRatio: 3 / 3,
           ),
-          children: [
-            const ProjectCard(),
-            const ProjectCard(),
-            const ProjectCard(),
-            const ProjectCard(),
+          children: const [
+            ProjectCard(),
+            ProjectCard(),
+            ProjectCard(),
+            ProjectCard(),
           ],
         ),
       ),

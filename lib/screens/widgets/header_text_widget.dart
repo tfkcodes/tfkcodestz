@@ -21,9 +21,16 @@ class HeaderTextWidget extends StatelessWidget {
             : CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
+          Text(
+            "WELCOME TO MY PORTFOLIO 👋",
+            style: TextStyle(
+              color: AppColors.studio,
+              fontSize: 20,
+            ),
+          ),
           TextWidget(
             sSize: size,
-            text: "I am Oladapo",
+            text: "Oladapo",
             color: Colors.white,
             size: 26,
             fw: FontWeight.bold,

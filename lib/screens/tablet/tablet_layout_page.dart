@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
 import 'package:porfolio/constants/styles.dart';
+import 'package:porfolio/screens/drawer.dart';
+import 'package:porfolio/screens/side_menu_button.dart';
 import 'package:porfolio/screens/widgets/count_container_widget.dart';
 import 'package:porfolio/screens/widgets/download_cv_widget.dart';
 import 'package:porfolio/screens/widgets/header_text_widget.dart';
@@ -20,15 +22,22 @@ class _TabletLayoutState extends State<TabletLayout> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      drawer: const CustomDrawer(),
       body: Container(
         height: double.infinity,
         width: double.infinity,
         decoration: Styles.gradientDecoration,
         child: SingleChildScrollView(
           child: Container(
-            margin: EdgeInsets.symmetric(vertical: size.height * 0.18),
+            margin: EdgeInsets.symmetric(vertical: size.height * 0.01),
             child: Column(
               children: [
+                MenuButton(
+                  onTap: () => Scaffold.of(context).openDrawer(),
+                ),
+                const SizedBox(
+                  height: 50,
+                ),
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -42,7 +51,9 @@ class _TabletLayoutState extends State<TabletLayout> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [RotatingImageContainer()],
                         ),
-                        SizedBox(height: size.width*0.09,),
+                        SizedBox(
+                          height: size.width * 0.09,
+                        ),
                         Row(
                           children: [
                             HeaderTextWidget(
@@ -56,7 +67,6 @@ class _TabletLayoutState extends State<TabletLayout> {
                         SocialTab(size: size)
                       ],
                     ),
-
                   ],
                 ),
                 const SizedBox(
@@ -64,29 +74,42 @@ class _TabletLayoutState extends State<TabletLayout> {
                 ),
                 Container(
                   width: size.width,
-
-                  margin: EdgeInsets.symmetric(horizontal: size.width*0.05),
+                  margin: EdgeInsets.symmetric(horizontal: size.width * 0.05),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      CountWidget(size: size,text1: "4",text2: "Years of",text3: "Experience",),
-                      const SizedBox(height: 20,),
+                      CountWidget(
+                        size: size,
+                        text1: "3+",
+                        text2: "Years of",
+                        text3: "Experience",
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
                       Divider(
                         color: AppColors.paleSlate,
-                        indent: size.width*0.05,
-                        endIndent: size.width*0.05,
-
+                        indent: size.width * 0.05,
+                        endIndent: size.width * 0.05,
                       ),
 
-                      const SizedBox(height: 20,),
-                      CountWidget(size: size,text1: "6+",text2: "Projects",text3: "Completed",),
-                      const SizedBox(height: 20,),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      CountWidget(
+                        size: size,
+                        text1: "6+",
+                        text2: "Projects",
+                        text3: "Completed",
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
                       Divider(
                         color: AppColors.paleSlate,
-                        indent: size.width*0.05,
-                        endIndent: size.width*0.05,
-
+                        indent: size.width * 0.05,
+                        endIndent: size.width * 0.05,
                       ),
 
                       // const SizedBox(height: 20,),
@@ -101,11 +124,9 @@ class _TabletLayoutState extends State<TabletLayout> {
 
                       // const SizedBox(height: 20,),
                       // CountWidget(size: size,text1: "1M",text2: "Awesome",text3: "Reviews",),
-
                     ],
                   ),
                 ),
-
                 MyServicesWidget(size: size)
               ],
             ),
@@ -127,7 +148,7 @@ class SocialTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: size.width ,
+      width: size.width,
       child: const Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -137,8 +158,6 @@ class SocialTab extends StatelessWidget {
             height: 20,
           ),
           SocialWidget(),
-
-
         ],
       ),
     );

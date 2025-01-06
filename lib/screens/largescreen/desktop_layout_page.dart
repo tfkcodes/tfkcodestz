@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
 import 'package:porfolio/constants/styles.dart';
+import 'package:porfolio/screens/drawer.dart';
+import 'package:porfolio/screens/side_menu_button.dart';
 import 'package:porfolio/screens/widgets/count_container_widget.dart';
 import 'package:porfolio/screens/widgets/custom_tab_bar.dart';
 import 'package:porfolio/screens/widgets/header_text_widget.dart';
@@ -35,6 +37,7 @@ class _DesktopLayoutState extends State<DesktopLayout>
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      drawer: const CustomDrawer(),
       body: Container(
         height: double.infinity,
         width: double.infinity,
@@ -42,6 +45,9 @@ class _DesktopLayoutState extends State<DesktopLayout>
         child: SingleChildScrollView(
           child: Column(
             children: [
+              MenuButton(
+                onTap: () => Scaffold.of(context).openDrawer(),
+              ),
               Container(
                 margin: EdgeInsets.symmetric(vertical: size.height * 0.18),
                 child: Row(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
 import 'package:porfolio/constants/styles.dart';
+import 'package:porfolio/screens/drawer.dart';
+import 'package:porfolio/screens/side_menu_button.dart';
 import 'package:porfolio/screens/tablet/tablet_layout_page.dart';
 import 'package:porfolio/screens/widgets/count_container_widget.dart';
 import 'package:porfolio/screens/widgets/header_text_widget.dart';
@@ -19,15 +21,22 @@ class _MobileLayoutState extends State<MobileLayout> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      drawer: const CustomDrawer(),
       body: Container(
         height: double.infinity,
         width: double.infinity,
         decoration: Styles.gradientDecoration,
         child: SingleChildScrollView(
           child: Container(
-            margin: EdgeInsets.symmetric(vertical: size.height * 0.18),
+            margin: EdgeInsets.symmetric(vertical: size.height * 0.02),
             child: Column(
               children: [
+                MenuButton(
+                  onTap: () => Scaffold.of(context).openDrawer(),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
                 const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [RotatingImageContainer()],
@@ -64,29 +73,42 @@ class _MobileLayoutState extends State<MobileLayout> {
                 ),
                 Container(
                   width: size.width,
-
-                  margin: EdgeInsets.symmetric(horizontal: size.width*0.05),
+                  margin: EdgeInsets.symmetric(horizontal: size.width * 0.05),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      CountWidget(size: size,text1: "4",text2: "Years of",text3: "Experience",),
-                      const SizedBox(height: 20,),
+                      CountWidget(
+                        size: size,
+                        text1: "4",
+                        text2: "Years of",
+                        text3: "Experience",
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
                       Divider(
                         color: AppColors.paleSlate,
-                        indent: size.width*0.05,
-                        endIndent: size.width*0.05,
-
+                        indent: size.width * 0.05,
+                        endIndent: size.width * 0.05,
                       ),
 
-                      const SizedBox(height: 20,),
-                      CountWidget(size: size,text1: "6+",text2: "Projects",text3: "Completed",),
-                      const SizedBox(height: 20,),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      CountWidget(
+                        size: size,
+                        text1: "6+",
+                        text2: "Projects",
+                        text3: "Completed",
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
                       Divider(
                         color: AppColors.paleSlate,
-                        indent: size.width*0.05,
-                        endIndent: size.width*0.05,
-
+                        indent: size.width * 0.05,
+                        endIndent: size.width * 0.05,
                       ),
 
                       // const SizedBox(height: 20,),
@@ -101,15 +123,12 @@ class _MobileLayoutState extends State<MobileLayout> {
 
                       // const SizedBox(height: 20,),
                       // CountWidget(size: size,text1: "1M",text2: "Awesome",text3: "Reviews",),
-
                     ],
                   ),
                 ),
-
                 SizedBox(
                   height: size.width * 0.09,
                 ),
-                
                 MyServicesWidget(size: size)
               ],
             ),
