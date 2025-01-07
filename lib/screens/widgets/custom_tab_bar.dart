@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
+import 'package:porfolio/constants/const.dart';
 import 'package:porfolio/screens/widgets/project_card.dart';
 
 class CustomTabBar extends StatelessWidget {
@@ -8,10 +9,9 @@ class CustomTabBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
 
     return Container(
-      width: size.width * 0.36,
+      width: width() * 0.36,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         border: Border.all(color: Colors.transparent),
@@ -73,7 +73,7 @@ class AllProjects extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: size.width * 0.10),
+      margin: EdgeInsets.symmetric(horizontal: width() * 0.10),
       padding: const EdgeInsets.all(20),
       child: Center(
         child: GridView(

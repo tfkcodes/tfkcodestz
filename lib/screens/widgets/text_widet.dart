@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:porfolio/constants/const.dart';
 
 class TextWidget extends StatelessWidget {
   final TextAlign? alignment;
@@ -20,9 +21,9 @@ class TextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       "$text",
-      textAlign: sSize.width < 600 && alignment != null ? alignment : null,
+      textAlign: width() < 600 && alignment != null ? alignment : null,
       style: TextStyle(
-        fontSize: size ?? sSize.width * 0.040,
+        fontSize: size ?? width() * 0.040,
         color: color,
         fontWeight: fw,
       ),

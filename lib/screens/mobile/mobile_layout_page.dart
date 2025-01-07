@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
+import 'package:porfolio/constants/const.dart';
 import 'package:porfolio/constants/gradient_styles.dart';
 import 'package:porfolio/screens/drawer.dart';
 import 'package:porfolio/screens/side_menu_button.dart';
 import 'package:porfolio/screens/tablet/tablet_layout_page.dart';
 import 'package:porfolio/screens/widgets/count_container_widget.dart';
 import 'package:porfolio/screens/widgets/header_text_widget.dart';
-import 'package:porfolio/screens/widgets/myservice_widgets.dart';
 import 'package:porfolio/screens/widgets/rotating_image_widget.dart';
 
 class MobileLayout extends StatefulWidget {
@@ -28,7 +28,7 @@ class _MobileLayoutState extends State<MobileLayout> {
         decoration: Styles.gradientDecoration,
         child: SingleChildScrollView(
           child: Container(
-            margin: EdgeInsets.symmetric(vertical: size.height * 0.02),
+            margin: EdgeInsets.symmetric(vertical: height() * 0.02),
             child: Column(
               children: [
                 MenuButton(
@@ -42,7 +42,7 @@ class _MobileLayoutState extends State<MobileLayout> {
                   children: [RotatingImageContainer()],
                 ),
                 SizedBox(
-                  height: size.width * 0.09,
+                  height: width() * 0.09,
                 ),
                 Row(
                   mainAxisSize: MainAxisSize.min,
@@ -69,11 +69,11 @@ class _MobileLayoutState extends State<MobileLayout> {
                   ],
                 ),
                 SizedBox(
-                  height: size.width * 0.09,
+                  height: width() * 0.09,
                 ),
                 Container(
-                  width: size.width,
-                  margin: EdgeInsets.symmetric(horizontal: size.width * 0.05),
+                  width: width(),
+                  margin: EdgeInsets.symmetric(horizontal: width() * 0.05),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -89,8 +89,8 @@ class _MobileLayoutState extends State<MobileLayout> {
                       ),
                       Divider(
                         color: paleSlate,
-                        indent: size.width * 0.05,
-                        endIndent: size.width * 0.05,
+                        indent: width() * 0.05,
+                        endIndent: width() * 0.05,
                       ),
 
                       const SizedBox(
@@ -107,8 +107,8 @@ class _MobileLayoutState extends State<MobileLayout> {
                       ),
                       Divider(
                         color: paleSlate,
-                        indent: size.width * 0.05,
-                        endIndent: size.width * 0.05,
+                        indent: width() * 0.05,
+                        endIndent: width() * 0.05,
                       ),
 
                       // const SizedBox(height: 20,),
@@ -116,8 +116,8 @@ class _MobileLayoutState extends State<MobileLayout> {
                       // const SizedBox(height: 20,),
                       // Divider(
                       //   color:  paleSlate,
-                      //   indent: size.width*0.05,
-                      //   endIndent: size.width*0.05,
+                      //   indent: width()*0.05,
+                      //   endIndent: width()*0.05,
 
                       // ),
 
@@ -127,9 +127,8 @@ class _MobileLayoutState extends State<MobileLayout> {
                   ),
                 ),
                 SizedBox(
-                  height: size.width * 0.09,
+                  height: width() * 0.09,
                 ),
-                MyServicesWidget(size: size)
               ],
             ),
           ),

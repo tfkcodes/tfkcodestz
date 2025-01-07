@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
+import 'package:porfolio/constants/styles.dart';
 import 'drawer_image.dart';
 
 class About extends StatelessWidget {
@@ -10,34 +11,26 @@ class About extends StatelessWidget {
       aspectRatio: 1.23,
       child: Container(
         color: ebony,
-        child: const Column(
+        child: Column(
           children: [
-            Spacer(
+            const Spacer(
               flex: 2,
             ),
-            DrawerImage(),
-            Spacer(),
+            const DrawerImage(),
+            const Spacer(),
             Text(
               'Oladapo Olatubosun',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontFamily: "Poppings",
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyles.style20extrabold,
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Text(
               'Mobile Engineer',
               textAlign: TextAlign.center,
-              style: TextStyle(
-                  fontWeight: FontWeight.w200,
-                  height: 1.5,
-                  color: Colors.white),
+              style: TextStyles.style18regular,
             ),
-            Spacer(
+            const Spacer(
               flex: 2,
             ),
           ],

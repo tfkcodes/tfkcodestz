@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
+import 'package:porfolio/constants/const.dart';
 import 'package:porfolio/screens/widgets/text_widet.dart';
 
 class ProjectCard extends StatefulWidget {
@@ -26,8 +27,8 @@ class _ProjectCardState extends State<ProjectCard> {
       onEnter: (_) => _onHover(true),
       onExit: (event) => _onHover(false),
       child: Container(
-        height: size.width * 0.10,
-        width: size.width * 0.10,
+        height: width() * 0.10,
+        width: width() * 0.10,
         decoration: BoxDecoration(
           color: ebony.withOpacity(0.8),
           borderRadius: BorderRadius.circular(15),
@@ -44,8 +45,8 @@ class _ProjectCardState extends State<ProjectCard> {
                 margin: const EdgeInsets.all(10),
                 curve: Curves.linear,
                 duration: const Duration(milliseconds: 400),
-                height: _isHovered ? size.height * 0.15 : 0,
-                width: size.width, //_isHovered ? size.width : 0,
+                height: _isHovered ? height() * 0.15 : 0,
+                width: width(), //_isHovered ? width() : 0,
                 decoration: BoxDecoration(
                   color: studio,
                   borderRadius: BorderRadius.circular(15),
@@ -61,7 +62,7 @@ class _ProjectCardState extends State<ProjectCard> {
                           "Project",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: size.width * 0.02,
+                            fontSize: width() * 0.02,
                           ),
                         ),
                       ),

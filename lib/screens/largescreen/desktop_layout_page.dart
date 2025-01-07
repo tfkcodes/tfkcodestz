@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/app_strings.dart';
 import 'package:porfolio/constants/colors.dart';
+import 'package:porfolio/constants/const.dart';
 import 'package:porfolio/constants/gradient_styles.dart';
+import 'package:porfolio/constants/styles.dart';
 import 'package:porfolio/screens/drawer.dart';
 import 'package:porfolio/screens/side_menu_button.dart';
 import 'package:porfolio/screens/widgets/count_container_widget.dart';
 import 'package:porfolio/screens/widgets/custom_tab_bar.dart';
 import 'package:porfolio/screens/widgets/header_text_widget.dart';
-import 'package:porfolio/screens/widgets/myservice_widgets.dart';
 import 'package:porfolio/screens/widgets/rotating_image_widget.dart';
-import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class DesktopLayout extends StatefulWidget {
   const DesktopLayout({super.key});
@@ -50,7 +50,7 @@ class _DesktopLayoutState extends State<DesktopLayout>
                 onTap: () => Scaffold.of(context).openDrawer(),
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: size.height * 0.18),
+                margin: EdgeInsets.symmetric(vertical: height() * 0.18),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -77,7 +77,7 @@ class _DesktopLayoutState extends State<DesktopLayout>
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: size.width * 0.05),
+                margin: EdgeInsets.symmetric(horizontal: width() * 0.05),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -99,66 +99,56 @@ class _DesktopLayoutState extends State<DesktopLayout>
                   ],
                 ),
               ),
-              SizedBox(
-                height: size.height * 0.1,
+              verticalSpace(
+                0.1,
               ),
               Container(
                 color: ebony,
                 padding: EdgeInsets.symmetric(
-                  vertical: size.width * 0.05,
-                  horizontal: size.width * 0.05,
+                  vertical: width() * 0.05,
+                  horizontal: width() * 0.05,
                 ),
                 child: Column(
                   children: [
-                    GradientText(
-                      "About Me",
-                      colors: const [
-                        studio,
-                        paleSlate,
-                      ],
-                      style: TextStyle(
-                          fontSize: size.width * 0.030,
-                          fontWeight: FontWeight.bold),
+                    GradientTextWidget(
+                      size: size,
+                      text1: "About Me",
                     ),
-                    SizedBox(
-                      height: size.height * 0.02,
-                    ),
+                    verticalSpace(0.01),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        SizedBox(
-                          height: size.height * 0.6,
-                          width: size.width * 0.25,
-                          child: Image.asset(
-                            "assets/images/profile_new.jpg",
-                          ),
-                        ),
-                        Expanded(
-                          child: Text(
-                           AppString.aboutMe,
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w600,
+                        Container(
+                          height: height() * 0.6,
+                          width: width() * 0.25,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            image: const DecorationImage(
+                              image: AssetImage(
+                                "assets/images/profile_new.jpg",
+                              ),
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
+                        SizedBox(
+                          width: width() * 0.4,
+                          child: Text(
+                            AppString.aboutMe,
+                            style:
+                                TextStyles.style16regular.copyWith(height: 3),
+                          ),
+                        ),
                       ],
                     ),
-                    SizedBox(
-                      height: size.height * 0.05,
-                    ),
-                    MyServicesWidget(size: size),
+                    verticalSpace(0.05),
                   ],
                 ),
               ),
-              SizedBox(
-                height: size.height * 0.1,
-              ),
+              verticalSpace(0.1),
               GradientTextWidget(
                 size: size,
                 text1: "My Recent Projects",
-              ),
-              SizedBox(
-                height: size.height * 0.05,
               ),
               AllProjects(size: size),
             ],

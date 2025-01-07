@@ -11,4 +11,5 @@ const Color revolver = Color(0xFF271b3d);
 const Color cocoaBrown = Color(0xFF332222);
 const Color capeCod = Color(0xFF414443);
 const Color black = Color(0xFF021528);
+const Color white = Color(0xFFFFFFFF);
 

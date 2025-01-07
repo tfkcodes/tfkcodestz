@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:porfolio/constants/colors.dart';
+import 'package:porfolio/constants/styles.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class DownloadCVButton extends StatelessWidget {
@@ -27,17 +28,17 @@ class DownloadCVButton extends StatelessWidget {
             color: Colors.transparent,
             borderRadius: BorderRadius.circular(20),
             border: Border.all(color: paleSlate)),
-        child: const Row(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               "Download CV",
-              style: TextStyle(color: paleSlate),
+              style: TextStyles.style16regular,
             ),
-            SizedBox.square(
+            const SizedBox.square(
               dimension: 12,
             ),
-            FaIcon(
+            const FaIcon(
               FontAwesomeIcons.download,
               color: paleSlate,
               size: 18,

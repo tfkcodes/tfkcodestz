@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:porfolio/constants/const.dart';
 
 class MenuButton extends StatelessWidget {
   final VoidCallback? onTap;
   const MenuButton({super.key, this.onTap});
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
 
     return Padding(
-      padding: EdgeInsets.only(top: 30, left: size.width * 0.05),
+      padding: EdgeInsets.only(top: 30, left: width() * 0.05),
       child: Row(
         children: [
           Builder(
