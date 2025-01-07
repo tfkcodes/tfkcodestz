@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:porfolio/constants/app_strings.dart';
 import 'package:porfolio/constants/colors.dart';
 import 'package:porfolio/constants/const.dart';
 import 'package:porfolio/constants/gradient_styles.dart';
+import 'package:porfolio/constants/styles.dart';
 import 'package:porfolio/screens/drawer/drawer.dart';
+import 'package:porfolio/screens/widgets/custom_tab_bar.dart';
 import 'package:porfolio/screens/widgets/side_menu_button.dart';
 import 'package:porfolio/screens/widgets/count_container_widget.dart';
 import 'package:porfolio/screens/widgets/download_cv_widget.dart';
@@ -10,14 +13,9 @@ import 'package:porfolio/screens/widgets/header_text_widget.dart';
 import 'package:porfolio/screens/widgets/rotating_image_widget.dart';
 import 'package:porfolio/screens/widgets/social_widget.dart';
 
-class TabletLayout extends StatefulWidget {
+class TabletLayout extends StatelessWidget {
   const TabletLayout({super.key});
 
-  @override
-  State<TabletLayout> createState() => _TabletLayoutState();
-}
-
-class _TabletLayoutState extends State<TabletLayout> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -35,9 +33,7 @@ class _TabletLayoutState extends State<TabletLayout> {
                 MenuButton(
                   onTap: () => Scaffold.of(context).openDrawer(),
                 ),
-                const SizedBox(
-                  height: 50,
-                ),
+                verticalSpaceLarge(),
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -51,9 +47,7 @@ class _TabletLayoutState extends State<TabletLayout> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [RotatingImageContainer()],
                         ),
-                        SizedBox(
-                          height: width() * 0.09,
-                        ),
+                        verticalSpace(0.05),
                         Row(
                           children: [
                             HeaderTextWidget(
@@ -61,17 +55,13 @@ class _TabletLayoutState extends State<TabletLayout> {
                             ),
                           ],
                         ),
-                        const SizedBox(
-                          height: 20,
-                        ),
+                        verticalSpaceMedium(),
                         SocialTab(size: size)
                       ],
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: 20,
-                ),
+                verticalSpace(0.05),
                 Container(
                   width: width(),
                   margin: EdgeInsets.symmetric(horizontal: width() * 0.05),
@@ -85,48 +75,68 @@ class _TabletLayoutState extends State<TabletLayout> {
                         text2: "Years of",
                         text3: "Experience",
                       ),
-                      const SizedBox(
-                        height: 20,
-                      ),
+                      verticalSpaceMedium(),
                       Divider(
                         color: paleSlate,
                         indent: width() * 0.05,
                         endIndent: width() * 0.05,
                       ),
-
-                      const SizedBox(
-                        height: 20,
-                      ),
+                      verticalSpaceMedium(),
                       CountWidget(
                         size: size,
                         text1: "6+",
                         text2: "Projects",
                         text3: "Completed",
                       ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      Divider(
-                        color: paleSlate,
-                        indent: width() * 0.05,
-                        endIndent: width() * 0.05,
-                      ),
-
-                      // const SizedBox(height: 20,),
-                      // CountWidget(size: size,text1: "1.5K",text2: "Happy",text3: "Customers",),
-                      // const SizedBox(height: 20,),
-                      // Divider(
-                      //   color:  paleSlate,
-                      //   indent: width()*0.05,
-                      //   endIndent: width()*0.05,
-
-                      // ),
-
-                      // const SizedBox(height: 20,),
-                      // CountWidget(size: size,text1: "1M",text2: "Awesome",text3: "Reviews",),
+                      verticalSpace(0.05),
                     ],
                   ),
                 ),
+                Container(
+                  width: width(),
+                  color: ebony,
+                  padding: EdgeInsets.symmetric(
+                    vertical: width() * 0.05,
+                    horizontal: width() * 0.05,
+                  ),
+                  child: Column(
+                    children: [
+                      GradientTextWidget(
+                        size: size,
+                        text1: "About Me",
+                      ),
+                      verticalSpace(0.01),
+                      Container(
+                        height: height() * 0.4,
+                        width: width() * 0.6,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: const DecorationImage(
+                            image: AssetImage(
+                              "assets/images/profile_new.jpg",
+                            ),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      verticalSpace(0.02),
+                      Text(
+                        AppString.aboutMe,
+                        style: TextStyles.style16regular.copyWith(
+                          height: 2,
+                        ),
+                        textAlign: TextAlign.justify,
+                      ),
+                      verticalSpace(0.05),
+                    ],
+                  ),
+                ),
+                verticalSpace(0.05),
+                GradientTextWidget(
+                  size: size,
+                  text1: "My Recent Projects",
+                ),
+                AllProjects(size: size),
               ],
             ),
           ),

@@ -11,28 +11,8 @@ import 'package:porfolio/screens/widgets/custom_tab_bar.dart';
 import 'package:porfolio/screens/widgets/header_text_widget.dart';
 import 'package:porfolio/screens/widgets/rotating_image_widget.dart';
 
-class DesktopLayout extends StatefulWidget {
+class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
-
-  @override
-  State<DesktopLayout> createState() => _DesktopLayoutState();
-}
-
-class _DesktopLayoutState extends State<DesktopLayout>
-    with SingleTickerProviderStateMixin {
-  late TabController _tabController;
-
-  @override
-  void initState() {
-    _tabController = TabController(length: 3, vsync: this);
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    _tabController.dispose();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {

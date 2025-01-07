@@ -12,14 +12,9 @@ import 'package:porfolio/screens/widgets/count_container_widget.dart';
 import 'package:porfolio/screens/widgets/header_text_widget.dart';
 import 'package:porfolio/screens/widgets/rotating_image_widget.dart';
 
-class MobileLayout extends StatefulWidget {
+class MobileLayout extends StatelessWidget {
   const MobileLayout({super.key});
 
-  @override
-  State<MobileLayout> createState() => _MobileLayoutState();
-}
-
-class _MobileLayoutState extends State<MobileLayout> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;

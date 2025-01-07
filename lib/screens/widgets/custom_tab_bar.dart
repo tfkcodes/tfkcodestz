@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
 import 'package:porfolio/constants/const.dart';
+import 'package:porfolio/model/project_model.dart';
 import 'package:porfolio/screens/widgets/project_card.dart';
 
 class CustomTabBar extends StatelessWidget {
@@ -75,21 +76,19 @@ class AllProjects extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: width() * 0.10),
       padding: const EdgeInsets.all(20),
       child: Center(
-        child: GridView(
+        child: GridView.builder(
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: width() < 600 ? 1 : 2,
+            crossAxisCount: width() < 950 ? 1 : 2,
             mainAxisSpacing: 30,
             crossAxisSpacing: 30,
             childAspectRatio: 3 / 3,
           ),
-          children: const [
-            ProjectCard(),
-            ProjectCard(),
-            ProjectCard(),
-            ProjectCard(),
-          ],
+          itemCount: myProjects.length,
+          itemBuilder: (context, index) {
+            return ProjectCard(project: myProjects[index]);
+          },
         ),
       ),
     );

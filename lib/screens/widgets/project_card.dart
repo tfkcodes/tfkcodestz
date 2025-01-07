@@ -2,9 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
 import 'package:porfolio/constants/const.dart';
 import 'package:porfolio/constants/styles.dart';
+import 'package:porfolio/model/project_model.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCard extends StatefulWidget {
-  const ProjectCard({super.key});
+  final Project project;
+  const ProjectCard({
+    super.key,
+    required this.project,
+  });
 
   @override
   State<ProjectCard> createState() => _ProjectCardState();
@@ -35,8 +41,12 @@ class _ProjectCardState extends State<ProjectCard> {
           children: [
             Container(
               margin: const EdgeInsets.all(50),
-              child: Image.asset(
-                "assets/images/project.png",
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage(
+                      widget.project.imageUrl,
+                    ),
+                    fit: BoxFit.cover),
               ),
             ),
             Align(
@@ -59,21 +69,61 @@ class _ProjectCardState extends State<ProjectCard> {
                     children: [
                       Expanded(
                         child: Text(
-                          "Project",
-                          style: TextStyles.style20extrabold.copyWith(
-                            fontSize: width() * 0.02,
-                          ),
+                          widget.project.title,
+                          style: TextStyles.style24extrabold,
                         ),
                       ),
                       Expanded(
-                        child: TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            "Click to view",
-                            style: TextStyles.style18regular,
-                          ),
+                        child: Text(
+                          widget.project.description,
+                          style: TextStyles.style12regular,
+                          textAlign: TextAlign.center,
                         ),
                       ),
+                      Expanded(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            TextButton(
+                              onPressed: () async {
+                                var url = widget.project.iosUrl;
+                                if (await canLaunchUrl(Uri.parse(url))) {
+                                  await launchUrl(Uri.parse(url));
+                                } else {
+                                  throw 'Could not launch $url';
+                                }
+                              },
+                              child: Text(
+                                "iOS",
+                                style: TextStyles.style18regular,
+                              ),
+                            ),
+                            TextButton(
+                              onPressed: () async {
+                                var url = widget.project.androidUrl;
+                                if (await canLaunchUrl(Uri.parse(url))) {
+                                  await launchUrl(Uri.parse(url));
+                                } else {
+                                  throw 'Could not launch $url';
+                                }
+                              },
+                              child: Text(
+                                "Android",
+                                style: TextStyles.style18regular,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      // Expanded(
+                      //   child: TextButton(
+                      //     onPressed: () {},
+                      //     child: Text(
+                      //       "Click to view",
+                      //       style: TextStyles.style18regular,
+                      //     ),
+                      //   ),
+                      // ),
                     ],
                   ),
                 ),
