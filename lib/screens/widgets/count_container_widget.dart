@@ -20,14 +20,13 @@ class CountWidget extends StatelessWidget {
 
         Text(text1,style: TextStyle(
           color: Colors.white,
-          fontFamily: 'Poppins',
           fontWeight: FontWeight.w600,
           fontSize: size.width*0.05
         ),),
 
         const SizedBox(width: 10,),
 
-        Text("$text2\n$text3",style: const TextStyle(color: Colors.white,fontFamily: 'Poppins'),)
+        Text("$text2\n$text3",style: const TextStyle(color: Colors.white,),)
       ],
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:porfolio/constants/colors.dart';
 import 'package:porfolio/screens/widgets/download_cv_widget.dart';
 import 'package:porfolio/screens/widgets/social_widget.dart';
@@ -16,23 +17,45 @@ class HeaderTextWidget extends StatelessWidget {
         horizontal: size.width * 0.07,
       ),
       child: Column(
-        crossAxisAlignment: size.width > 600
+        crossAxisAlignment: size.width > 950
             ? CrossAxisAlignment.start
             : CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Text(
-            "WELCOME TO MY PORTFOLIO 👋",
-            style: TextStyle(
-              color: AppColors.studio,
-              fontSize: 20,
-            ),
+          Row(
+            children: [
+              const Text(
+                "WELCOME TO MY PORTFOLIO!",
+                style: TextStyle(
+                  color: studio,
+                  fontSize: 15,
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+              SvgPicture.asset(
+                "assets/icons/wave.svg",
+                height: 20,
+                width: 20,
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 20,
           ),
           TextWidget(
             sSize: size,
             text: "Oladapo",
             color: Colors.white,
-            size: 26,
+            size: 30,
+            alignment: TextAlign.center,
+          ),
+          TextWidget(
+            sSize: size,
+            text: "Olatubosun",
+            color: Colors.white,
+            size: 40,
             fw: FontWeight.bold,
             alignment: TextAlign.center,
           ),
@@ -85,13 +108,13 @@ class GradientTextWidget extends StatelessWidget {
       textAlign: size.width < 600 && alignment != null ? alignment : null,
       "$text1\n${text2 ?? ""}",
       colors: const [
-        AppColors.studio,
-        AppColors.paleSlate,
+        studio,
+        paleSlate,
       ],
       style: TextStyle(
-          fontSize: size.width * 0.030,
-          fontFamily: 'Poppins',
-          fontWeight: FontWeight.bold),
+        fontSize: size.width * 0.030,
+        fontWeight: FontWeight.bold,
+      ),
     );
   }
 }

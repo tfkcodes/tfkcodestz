@@ -45,7 +45,7 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
               LinearProgressIndicator(
                 value: value,
                 backgroundColor: Colors.grey,
-                color: AppColors.studio,
+                color: studio,
               ),
             ],
           );

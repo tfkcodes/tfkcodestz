@@ -22,10 +22,10 @@ class TextWidget extends StatelessWidget {
       "$text",
       textAlign: sSize.width < 600 && alignment != null ? alignment : null,
       style: TextStyle(
-          fontSize: size ?? sSize.width * 0.040,
-          color: color,
-          fontWeight: fw,
-          fontFamily: 'Poppins'),
+        fontSize: size ?? sSize.width * 0.040,
+        color: color,
+        fontWeight: fw,
+      ),
     );
   }
 }

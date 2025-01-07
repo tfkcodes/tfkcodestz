@@ -35,13 +35,13 @@ class _MyServicesWidgetState extends State<MyServicesWidget> {
                   color: _isHovered[index] ? null : Colors.transparent,
                   border: Border.all(
                     color: _isHovered[index]
-                        ? AppColors.studio.withOpacity(0.5)
+                        ? studio.withOpacity(0.5)
                         : Colors.transparent,
                   ),
                   gradient: _isHovered[index]
                       ? const LinearGradient(colors: [
-                          AppColors.studio,
-                          AppColors.ebony,
+                          studio,
+                          ebony,
                         ])
                       : null,
                 ),
@@ -79,9 +79,7 @@ class _MyServicesWidgetState extends State<MyServicesWidget> {
                             _isHovered[index]
                                 ? FontAwesomeIcons.arrowTrendUp
                                 : FontAwesomeIcons.arrowTrendDown,
-                            color: _isHovered[index]
-                                ? Colors.white
-                                : AppColors.studio,
+                            color: _isHovered[index] ? Colors.white : studio,
                           )
                         ],
                       )

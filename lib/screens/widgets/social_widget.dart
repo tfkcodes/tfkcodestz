@@ -18,10 +18,10 @@ class SocialWidget extends StatelessWidget {
           decoration: BoxDecoration(
               color: Colors.transparent,
               shape: BoxShape.circle,
-              border: Border.all(color: AppColors.studio.withOpacity(0.5))),
+              border: Border.all(color: studio.withOpacity(0.5))),
           child: Center(
             child: IconButton(
-              hoverColor: AppColors.paleSlate,
+              hoverColor: paleSlate,
               onPressed: () async {
                 const url =
                     'https://www.linkedin.com/in/oladapodanielolatubosun/';
@@ -33,7 +33,7 @@ class SocialWidget extends StatelessWidget {
               },
               icon: const FaIcon(
                 FontAwesomeIcons.linkedinIn,
-                color: AppColors.studio,
+                color: studio,
                 size: 15,
               ),
             ),
@@ -48,10 +48,10 @@ class SocialWidget extends StatelessWidget {
           decoration: BoxDecoration(
               color: Colors.transparent,
               shape: BoxShape.circle,
-              border: Border.all(color: AppColors.studio.withOpacity(0.5))),
+              border: Border.all(color: studio.withOpacity(0.5))),
           child: Center(
             child: IconButton(
-              hoverColor: AppColors.paleSlate,
+              hoverColor: paleSlate,
               onPressed: () async {
                 const url = 'https://github.com/Dapo-dan';
                 if (await canLaunchUrl(Uri.parse(url))) {
@@ -62,7 +62,7 @@ class SocialWidget extends StatelessWidget {
               },
               icon: const FaIcon(
                 FontAwesomeIcons.github,
-                color: AppColors.studio,
+                color: studio,
                 size: 15,
               ),
             ),
@@ -77,10 +77,10 @@ class SocialWidget extends StatelessWidget {
           decoration: BoxDecoration(
               color: Colors.transparent,
               shape: BoxShape.circle,
-              border: Border.all(color: AppColors.studio.withOpacity(0.5))),
+              border: Border.all(color: studio.withOpacity(0.5))),
           child: Center(
             child: IconButton(
-              hoverColor: AppColors.paleSlate,
+              hoverColor: paleSlate,
               onPressed: () async {
                 const url =
                     'https://www.upwork.com/freelancers/~01ef61a88d5ca9b18c';
@@ -92,7 +92,7 @@ class SocialWidget extends StatelessWidget {
               },
               icon: const FaIcon(
                 FontAwesomeIcons.upwork,
-                color: AppColors.studio,
+                color: studio,
                 size: 15,
               ),
             ),

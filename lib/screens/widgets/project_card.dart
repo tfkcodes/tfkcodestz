@@ -29,7 +29,7 @@ class _ProjectCardState extends State<ProjectCard> {
         height: size.width * 0.10,
         width: size.width * 0.10,
         decoration: BoxDecoration(
-          color: AppColors.ebony.withOpacity(0.8),
+          color: ebony.withOpacity(0.8),
           borderRadius: BorderRadius.circular(15),
         ),
         child: Stack(
@@ -47,7 +47,7 @@ class _ProjectCardState extends State<ProjectCard> {
                 height: _isHovered ? size.height * 0.15 : 0,
                 width: size.width, //_isHovered ? size.width : 0,
                 decoration: BoxDecoration(
-                  color: AppColors.studio,
+                  color: studio,
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: Padding(
@@ -61,7 +61,6 @@ class _ProjectCardState extends State<ProjectCard> {
                           "Project",
                           style: TextStyle(
                             color: Colors.white,
-                            fontFamily: 'Poppins',
                             fontSize: size.width * 0.02,
                           ),
                         ),

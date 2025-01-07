@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
-import 'package:porfolio/constants/styles.dart';
+import 'package:porfolio/constants/gradient_styles.dart';
 import 'package:porfolio/screens/drawer.dart';
 import 'package:porfolio/screens/side_menu_button.dart';
 import 'package:porfolio/screens/widgets/count_container_widget.dart';
@@ -89,7 +89,7 @@ class _TabletLayoutState extends State<TabletLayout> {
                         height: 20,
                       ),
                       Divider(
-                        color: AppColors.paleSlate,
+                        color: paleSlate,
                         indent: size.width * 0.05,
                         endIndent: size.width * 0.05,
                       ),
@@ -107,7 +107,7 @@ class _TabletLayoutState extends State<TabletLayout> {
                         height: 20,
                       ),
                       Divider(
-                        color: AppColors.paleSlate,
+                        color: paleSlate,
                         indent: size.width * 0.05,
                         endIndent: size.width * 0.05,
                       ),
@@ -116,7 +116,7 @@ class _TabletLayoutState extends State<TabletLayout> {
                       // CountWidget(size: size,text1: "1.5K",text2: "Happy",text3: "Customers",),
                       // const SizedBox(height: 20,),
                       // Divider(
-                      //   color: AppColors.paleSlate,
+                      //   color:  paleSlate,
                       //   indent: size.width*0.05,
                       //   endIndent: size.width*0.05,
 

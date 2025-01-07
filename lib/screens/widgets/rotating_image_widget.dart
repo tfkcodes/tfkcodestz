@@ -27,7 +27,7 @@ class _RotatingImageContainerState extends State<RotatingImageContainer> {
             image: const DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage('assets/images/profile_new.jpg')),
-            border: Border.all(color: AppColors.studio, width: 1.2),
+            border: Border.all(color: studio, width: 1.2),
             borderRadius: BorderRadius.circular(20)),
       ),
     );

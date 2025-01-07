@@ -16,6 +16,7 @@ dependencies:
   font_awesome_flutter: ^10.7.0
   url_launcher: ^6.3.1
   flutter_svg: ^2.0.16
+  get: ^4.6.6
 
 dev_dependencies:
   flutter_test:
@@ -32,10 +33,10 @@ flutter:
     - assets/icons/
 
   fonts:
-    - family: Poppins
+    - family: SpaceGrotesk
       fonts:
-        - asset: assets/fonts/Poppins-Black.ttf
+        - asset: assets/fonts/SpaceGrotesk-Bold.ttf
           weight: 900
-        - asset: assets/fonts/Poppins-Bold.ttf
+        - asset: assets/fonts/SpaceGrotesk-SemiBold.ttf
           weight: 700
-        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/SpaceGrotesk-Regular.ttf

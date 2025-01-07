@@ -14,7 +14,7 @@ class KnowledgeText extends StatelessWidget {
           SvgPicture.asset(
             'assets/icons/check.svg',
             colorFilter: const ColorFilter.mode(
-              AppColors.studio,
+              studio,
               BlendMode.srcIn,
             ),
           ),

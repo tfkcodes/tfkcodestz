@@ -14,7 +14,7 @@ class DrawerImage extends StatelessWidget {
         borderRadius: BorderRadius.circular(50),
         gradient: const LinearGradient(
           colors: [
-             AppColors.studio,
+            studio,
             Color(0xFF6a5ae4),
           ],
         ),
