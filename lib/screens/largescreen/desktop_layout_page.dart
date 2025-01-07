@@ -50,7 +50,9 @@ class _DesktopLayoutState extends State<DesktopLayout>
                 onTap: () => Scaffold.of(context).openDrawer(),
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: height() * 0.18),
+                margin: EdgeInsets.symmetric(
+                  vertical: height() * 0.15,
+                ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,

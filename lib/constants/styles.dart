@@ -21,6 +21,7 @@ class TextStyles {
   static var style16medium = medium.copyWith(color: white, fontSize: 16);
 
   static var style14extrabold = extrabold.copyWith(color: white, fontSize: 14);
+  static var style14bold = bold.copyWith(color: white, fontSize: 14);
   static var style14regular = regular.copyWith(color: white, fontSize: 14);
 
   static var style13medium = medium.copyWith(color: white, fontSize: 13);

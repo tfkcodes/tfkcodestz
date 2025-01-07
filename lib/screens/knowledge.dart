@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:porfolio/constants/colors.dart';
+import 'package:porfolio/constants/styles.dart';
 
 class KnowledgeText extends StatelessWidget {
   const KnowledgeText({super.key, required this.knowledge});
@@ -23,7 +24,7 @@ class KnowledgeText extends StatelessWidget {
           ),
           Text(
             knowledge,
-            style: const TextStyle(color: Colors.white),
+            style: TextStyles.style14bold,
           ),
         ],
       ),

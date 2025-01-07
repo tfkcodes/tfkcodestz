@@ -26,7 +26,7 @@ class DrawerImage extends StatelessWidget {
               child: Image.asset(
                 'assets/images/profile_new.jpg',
                 fit: BoxFit.cover,
-              ))),
+              ),),),
     );
   }
 }

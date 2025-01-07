@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:porfolio/constants/styles.dart';
 
 import 'knowledge.dart';
 
@@ -7,16 +8,16 @@ class Knowledges extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return  Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Divider(),
+        const Divider(),
         Padding(
-          padding: EdgeInsets.symmetric(vertical: 10),
-          child: Text('Knowledge',style: TextStyle(color: Colors.white),),
+          padding: const EdgeInsets.symmetric(vertical: 10,),
+          child: Text('Knowledge', style: TextStyles.style20extrabold,),
         ),
-        KnowledgeText(knowledge: 'Flutter, Dart'),
-        KnowledgeText(knowledge: 'Git, Github'),
+        const KnowledgeText(knowledge: 'Flutter, Dart',),
+        const KnowledgeText(knowledge: 'Git, Github',),
       ],
     );
   }

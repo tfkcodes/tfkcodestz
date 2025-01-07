@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:porfolio/constants/const.dart';
+import 'package:porfolio/constants/styles.dart';
 import 'package:porfolio/screens/header_info.dart';
 
 class PersonalInfo extends StatelessWidget {
@@ -6,26 +8,20 @@ class PersonalInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SizedBox(
-          height: 10,
-        ),
-        AreaInfoText(title: 'Contact', text: '+234 7025214514'),
-        AreaInfoText(title: 'Email', text: 'odapo138@gmail.com'),
-        AreaInfoText(title: 'LinkedIn', text: '@oladapodanielolatubosun'),
-        AreaInfoText(title: 'Github', text: '@Dapo-dan'),
-        SizedBox(
-          height: 20,
-        ),
+        verticalSpaceSmall(),
+        const AreaInfoText(title: 'Contact', text: '+234 7025214514'),
+        const AreaInfoText(title: 'Email', text: 'odapo138@gmail.com'),
+        const AreaInfoText(title: 'LinkedIn', text: '@oladapodanielolatubosun'),
+        const AreaInfoText(title: 'Github', text: '@Dapo-dan'),
+        verticalSpaceMedium(),
         Text(
           'Skills',
-          style: TextStyle(color: Colors.white),
+          style: TextStyles.style20extrabold,
         ),
-        SizedBox(
-          height: 20,
-        ),
+        verticalSpaceMedium(),
       ],
     );
   }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
+import 'package:porfolio/constants/const.dart';
+import 'package:porfolio/constants/styles.dart';
 
 class AnimatedLinearProgressIndicator extends StatelessWidget {
   const AnimatedLinearProgressIndicator(
@@ -25,23 +27,17 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
                     width: 15,
                     fit: BoxFit.cover,
                   ),
-                  const SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    title,
-                    style: const TextStyle(color: Colors.white),
-                  ),
+                  horizontalSpaceTiny(),
+                  Text(title, style: TextStyles.style14bold),
                   const Spacer(),
                   Text(
                     '${(value * 100).toInt().toString()}%',
-                    style: const TextStyle(color: Colors.grey),
+                    style:
+                        TextStyles.style14regular.copyWith(color: Colors.grey),
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 10,
-              ),
+              verticalSpaceSmall(),
               LinearProgressIndicator(
                 value: value,
                 backgroundColor: Colors.grey,
@@ -69,23 +65,35 @@ class MySKills extends StatelessWidget {
           image: 'assets/icons/flutter.png',
         ),
         AnimatedLinearProgressIndicator(
-            percentage: 0.9, title: 'Dart', image: 'assets/icons/dart.png'),
+          percentage: 0.9,
+          title: 'Dart',
+          image: 'assets/icons/dart.png',
+        ),
         AnimatedLinearProgressIndicator(
-            percentage: 0.6,
-            title: 'Firebase',
-            image: 'assets/icons/firebase.png'),
+          percentage: 0.6,
+          title: 'Firebase',
+          image: 'assets/icons/firebase.png',
+        ),
         AnimatedLinearProgressIndicator(
-            percentage: 0.8,
-            title: 'Responsive Design',
-            image: 'assets/icons/flutter.png'),
+          percentage: 0.8,
+          title: 'Responsive Design',
+          image: 'assets/icons/flutter.png',
+        ),
         AnimatedLinearProgressIndicator(
-            percentage: 0.9,
-            title: 'Clean Architecture',
-            image: 'assets/icons/flutter.png'),
+          percentage: 0.9,
+          title: 'Clean Architecture',
+          image: 'assets/icons/flutter.png',
+        ),
         AnimatedLinearProgressIndicator(
-            percentage: 0.5, title: 'Bloc', image: 'assets/icons/bloc.png'),
+          percentage: 0.5,
+          title: 'Bloc',
+          image: 'assets/icons/bloc.png',
+        ),
         AnimatedLinearProgressIndicator(
-            percentage: 0.93, title: 'Getx', image: 'assets/icons/dart.png'),
+          percentage: 0.93,
+          title: 'Getx',
+          image: 'assets/icons/dart.png',
+        ),
       ],
     );
   }
