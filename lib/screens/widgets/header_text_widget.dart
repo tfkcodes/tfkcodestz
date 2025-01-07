@@ -56,10 +56,11 @@ class HeaderTextWidget extends StatelessWidget {
             text1: "Flutter Developer",
           ),
           SizedBox(
-            width: width() * 0.5,
+            width: width() > 950 ? width() * 0.5 : width() * 0.85,
             child: Text(
               "I specialize in building beautiful and functional mobile applications using Flutter, creating seamless user experiences for millions of users.",
               style: TextStyles.style16regular,
+              textAlign: TextAlign.center,
             ),
           ),
         ],
@@ -99,7 +100,11 @@ class GradientTextWidget extends StatelessWidget {
         paleSlate,
       ],
       style: TextStyles.style24extrabold.copyWith(
-        fontSize: width() * 0.030,
+        fontSize: width() < 600
+            ? 35
+            : width() < 950
+                ? width() * 0.05
+                : width() * 0.03,
       ),
     );
   }

@@ -25,11 +25,15 @@ class _RotatingImageContainerState extends State<RotatingImageContainer> {
         height: width() * 0.24,
         width: width() * 0.24,
         decoration: BoxDecoration(
-            image: const DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage('assets/images/profile_new.jpg')),
-            border: Border.all(color: studio, width: 1.2),
-            borderRadius: BorderRadius.circular(20)),
+          image: const DecorationImage(
+            fit: BoxFit.cover,
+            image: AssetImage(
+              'assets/images/profile_new.jpg',
+            ),
+          ),
+          border: Border.all(color: studio, width: 1.2),
+          borderRadius: BorderRadius.circular(20),
+        ),
       ),
     );
   }

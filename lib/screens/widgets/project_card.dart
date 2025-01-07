@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
 import 'package:porfolio/constants/const.dart';
-import 'package:porfolio/screens/widgets/text_widet.dart';
+import 'package:porfolio/constants/styles.dart';
 
 class ProjectCard extends StatefulWidget {
   const ProjectCard({super.key});
@@ -21,8 +21,6 @@ class _ProjectCardState extends State<ProjectCard> {
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.of(context).size;
-
     return MouseRegion(
       onEnter: (_) => _onHover(true),
       onExit: (event) => _onHover(false),
@@ -37,7 +35,9 @@ class _ProjectCardState extends State<ProjectCard> {
           children: [
             Container(
               margin: const EdgeInsets.all(50),
-              child: Image.asset("assets/images/project.png"),
+              child: Image.asset(
+                "assets/images/project.png",
+              ),
             ),
             Align(
               alignment: Alignment.bottomCenter,
@@ -60,8 +60,7 @@ class _ProjectCardState extends State<ProjectCard> {
                       Expanded(
                         child: Text(
                           "Project",
-                          style: TextStyle(
-                            color: Colors.white,
+                          style: TextStyles.style20extrabold.copyWith(
                             fontSize: width() * 0.02,
                           ),
                         ),
@@ -69,11 +68,9 @@ class _ProjectCardState extends State<ProjectCard> {
                       Expanded(
                         child: TextButton(
                           onPressed: () {},
-                          child: TextWidget(
-                            color: Colors.white,
-                            text: "Click to view",
-                            sSize: size,
-                            size: 18,
+                          child: Text(
+                            "Click to view",
+                            style: TextStyles.style18regular,
                           ),
                         ),
                       ),

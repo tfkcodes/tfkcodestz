@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
-import 'package:porfolio/screens/personal_info.dart';
+import 'package:porfolio/screens/drawer/personal_info.dart';
 import 'knowledges.dart';
 import 'about.dart';
 import 'my_skill.dart';

@@ -9,7 +9,6 @@ class CustomTabBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Container(
       width: width() * 0.36,
       decoration: BoxDecoration(
@@ -79,8 +78,8 @@ class AllProjects extends StatelessWidget {
         child: GridView(
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: width() < 600 ? 1 : 2,
             mainAxisSpacing: 30,
             crossAxisSpacing: 30,
             childAspectRatio: 3 / 3,

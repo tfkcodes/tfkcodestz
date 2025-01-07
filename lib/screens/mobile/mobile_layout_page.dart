@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:porfolio/constants/app_strings.dart';
 import 'package:porfolio/constants/colors.dart';
 import 'package:porfolio/constants/const.dart';
 import 'package:porfolio/constants/gradient_styles.dart';
-import 'package:porfolio/screens/drawer.dart';
-import 'package:porfolio/screens/side_menu_button.dart';
+import 'package:porfolio/constants/styles.dart';
+import 'package:porfolio/screens/drawer/drawer.dart';
+import 'package:porfolio/screens/widgets/custom_tab_bar.dart';
+import 'package:porfolio/screens/widgets/side_menu_button.dart';
 import 'package:porfolio/screens/tablet/tablet_layout_page.dart';
 import 'package:porfolio/screens/widgets/count_container_widget.dart';
 import 'package:porfolio/screens/widgets/header_text_widget.dart';
@@ -41,9 +44,7 @@ class _MobileLayoutState extends State<MobileLayout> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [RotatingImageContainer()],
                 ),
-                SizedBox(
-                  height: width() * 0.09,
-                ),
+                verticalSpace(0.05),
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -60,17 +61,13 @@ class _MobileLayoutState extends State<MobileLayout> {
                             ),
                           ],
                         ),
-                        const SizedBox(
-                          height: 20,
-                        ),
+                        verticalSpaceMedium(),
                         SocialTab(size: size)
                       ],
                     ),
                   ],
                 ),
-                SizedBox(
-                  height: width() * 0.09,
-                ),
+                verticalSpace(0.05),
                 Container(
                   width: width(),
                   margin: EdgeInsets.symmetric(horizontal: width() * 0.05),
@@ -80,55 +77,70 @@ class _MobileLayoutState extends State<MobileLayout> {
                     children: [
                       CountWidget(
                         size: size,
-                        text1: "4",
+                        text1: "3+",
                         text2: "Years of",
                         text3: "Experience",
                       ),
-                      const SizedBox(
-                        height: 20,
-                      ),
+                      verticalSpaceMedium(),
                       Divider(
                         color: paleSlate,
                         indent: width() * 0.05,
                         endIndent: width() * 0.05,
                       ),
-
-                      const SizedBox(
-                        height: 20,
-                      ),
+                      verticalSpaceMedium(),
                       CountWidget(
                         size: size,
                         text1: "6+",
                         text2: "Projects",
                         text3: "Completed",
                       ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      Divider(
-                        color: paleSlate,
-                        indent: width() * 0.05,
-                        endIndent: width() * 0.05,
-                      ),
-
-                      // const SizedBox(height: 20,),
-                      // CountWidget(size: size,text1: "1.5K",text2: "Happy",text3: "Customers",),
-                      // const SizedBox(height: 20,),
-                      // Divider(
-                      //   color:  paleSlate,
-                      //   indent: width()*0.05,
-                      //   endIndent: width()*0.05,
-
-                      // ),
-
-                      // const SizedBox(height: 20,),
-                      // CountWidget(size: size,text1: "1M",text2: "Awesome",text3: "Reviews",),
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: width() * 0.09,
+                verticalSpace(0.05),
+                Container(
+                  width: width(),
+                  color: ebony,
+                  padding: EdgeInsets.symmetric(
+                    vertical: width() * 0.05,
+                    horizontal: width() * 0.05,
+                  ),
+                  child: Column(
+                    children: [
+                      GradientTextWidget(
+                        size: size,
+                        text1: "About Me",
+                      ),
+                      verticalSpace(0.01),
+                      Container(
+                        height: height() * 0.3,
+                        width: width() * 0.6,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          image: const DecorationImage(
+                            image: AssetImage(
+                              "assets/images/profile_new.jpg",
+                            ),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      verticalSpaceMedium(),
+                      Text(
+                        AppString.aboutMe,
+                        style: TextStyles.style16regular,
+                        textAlign: TextAlign.justify,
+                      ),
+                      verticalSpace(0.05),
+                    ],
+                  ),
                 ),
+                verticalSpace(0.05),
+                GradientTextWidget(
+                  size: size,
+                  text1: "My Recent Projects",
+                ),
+                AllProjects(size: size),
               ],
             ),
           ),
