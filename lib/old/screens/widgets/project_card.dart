@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
 import 'package:porfolio/constants/const.dart';
 import 'package:porfolio/constants/styles.dart';
-import 'package:porfolio/model/project_model.dart';
+import 'package:porfolio/old/model/project_model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCard extends StatefulWidget {

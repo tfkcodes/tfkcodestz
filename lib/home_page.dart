@@ -1,0 +1,47 @@
+import 'package:flutter/material.dart';
+import 'package:porfolio/constants/const.dart';
+import 'package:porfolio/constants/gradient_styles.dart';
+import 'package:porfolio/old/screens/largescreen/desktop_layout_page.dart';
+import 'package:porfolio/old/screens/mobile/mobile_layout_page.dart';
+import 'package:porfolio/old/screens/navbar.dart';
+import 'package:porfolio/old/screens/tablet/tablet_layout_page.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      endDrawer: width() < 600
+          ? const MobileDrawer(
+              menuItems: ['Projects', 'Resume', 'Skills', 'Contact'])
+          : null,
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        decoration: Styles.gradientDecoration,
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            if (constraints.maxWidth > 950) {
+              return const DesktopView();
+            } else if (constraints.maxWidth > 600) {
+              return const TabletView();
+            } else {
+              return const MobileView();
+            }
+          },
+        ),
+      ),
+    );
+
+    // return LayoutBuilder(builder: (context, constraints) {
+    //   if (constraints.maxWidth > 950) {
+    //     return const DesktopLayout();
+    //   } else if (constraints.maxWidth > 600) {
+    //     return const TabletLayout();
+    //   } else {
+    //     return const MobileLayout();
+    //   }
+    // });
+  }
+}

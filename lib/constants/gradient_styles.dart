@@ -6,7 +6,7 @@ class Styles {
     gradient: LinearGradient(
       colors: [
         ebony,
-        studio,
+        valhalla,
       ],
     ),
   );
