@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/const.dart';
 import 'package:porfolio/constants/gradient_styles.dart';
-import 'package:porfolio/old/screens/largescreen/desktop_layout_page.dart';
-import 'package:porfolio/old/screens/mobile/mobile_layout_page.dart';
+import 'package:porfolio/view/desktop_layout_page.dart';
+import 'package:porfolio/view/mobile_layout_page.dart';
 import 'package:porfolio/old/screens/navbar.dart';
-import 'package:porfolio/old/screens/tablet/tablet_layout_page.dart';
+import 'package:porfolio/view/tablet_layout_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
