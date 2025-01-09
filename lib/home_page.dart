@@ -33,15 +33,5 @@ class HomePage extends StatelessWidget {
         ),
       ),
     );
-
-    // return LayoutBuilder(builder: (context, constraints) {
-    //   if (constraints.maxWidth > 950) {
-    //     return const DesktopLayout();
-    //   } else if (constraints.maxWidth > 600) {
-    //     return const TabletLayout();
-    //   } else {
-    //     return const MobileLayout();
-    //   }
-    // });
   }
 }
