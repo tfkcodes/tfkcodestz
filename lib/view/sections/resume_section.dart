@@ -19,12 +19,6 @@ class ResumeSection extends StatelessWidget {
     return Container(
       decoration: const BoxDecoration(
         color: ebony,
-        border: Border(
-          bottom: BorderSide(
-            color: Colors.white,
-            width: 1.0,
-          ),
-        ),
       ),
       width: width(),
       padding: EdgeInsets.symmetric(

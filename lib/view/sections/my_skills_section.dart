@@ -17,7 +17,7 @@ class MySkillsSection extends StatelessWidget {
     return Container(
       width: width(),
       padding: EdgeInsets.symmetric(
-          vertical: width() * 0.05, horizontal: width() * 0.05),
+          vertical: height() * 0.03, horizontal: width() * 0.05),
       child: Column(
         children: [
           GradientTextWidget(size: size, text1: "My Skills"),

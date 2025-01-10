@@ -20,9 +20,6 @@ class DesktopView extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          MySkillsSection(
-            size: size,
-          ),
           ResponsiveNavBar(),
           SectionSpacing(
             child: Row(
@@ -51,6 +48,10 @@ class DesktopView extends StatelessWidget {
           const ProjectsSection(),
           verticalSpace(0.05),
           ResumeSection(size: size),
+          verticalSpace(0.05),
+          MySkillsSection(
+            size: size,
+          ),
           verticalSpace(0.05),
         ],
       ),
