@@ -3,7 +3,7 @@ import 'package:porfolio/constants/const.dart';
 import 'package:porfolio/constants/gradient_styles.dart';
 import 'package:porfolio/view/desktop_layout_page.dart';
 import 'package:porfolio/view/mobile_layout_page.dart';
-import 'package:porfolio/old/screens/navbar.dart';
+import 'package:porfolio/widgets/navbar.dart';
 import 'package:porfolio/view/tablet_layout_page.dart';
 
 class HomePage extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/const.dart';
-import 'package:porfolio/old/screens/navbar.dart';
-import 'package:porfolio/old/screens/widgets/header_text_widget.dart';
+import 'package:porfolio/widgets/navbar.dart';
+import 'package:porfolio/widgets/header_text_widget.dart';
 import 'package:porfolio/old/screens/widgets/rotating_image_widget.dart';
 import 'package:porfolio/view/sections/about_section.dart';
 import 'package:porfolio/view/sections/my_skills_section.dart';

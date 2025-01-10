@@ -28,37 +28,30 @@ class DesktopNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      automaticallyImplyLeading: false,
-      backgroundColor: Colors.transparent,
-      elevation: 0,
-      title: Padding(
-        padding: EdgeInsets.only(
-          top: height() * 0.01,
-        ),
-        child: Row(
-          children: [
-            const Spacer(),
-            Row(
-              children: menuItems
-                  .map(
-                    (item) => Padding(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: width() * 0.02,
-                      ),
-                      child: Text(
-                        item,
-                        style: TextStyles.style18bold,
-                      ),
+    return Padding(
+      padding: EdgeInsets.only(
+        top: height() * 0.05,
+        right: width() * 0.1,
+      ),
+      child: Row(
+        children: [
+          const Spacer(),
+          Row(
+            children: menuItems
+                .map(
+                  (item) => Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: width() * 0.02,
                     ),
-                  )
-                  .toList(),
-            ),
-            horizontalSpace(
-              0.05,
-            ),
-          ],
-        ),
+                    child: Text(
+                      item,
+                      style: TextStyles.style18bold,
+                    ),
+                  ),
+                )
+                .toList(),
+          ),
+        ],
       ),
     );
   }
@@ -102,7 +95,7 @@ class MobileDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       child: Container(
-        color: Colors.purple.shade900,
+        color: const Color.fromARGB(255, 39, 21, 74),
         child: ListView(
           padding: EdgeInsets.zero,
           children: [

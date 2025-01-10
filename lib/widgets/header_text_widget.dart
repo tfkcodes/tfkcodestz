@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:porfolio/constants/const.dart';
 import 'package:porfolio/constants/styles.dart';
+import 'package:porfolio/widgets/entrance_fader.dart';
 import 'package:porfolio/widgets/gradient_text.dart';
 
 class HeaderTextWidget extends StatelessWidget {
@@ -27,13 +27,17 @@ class HeaderTextWidget extends StatelessWidget {
             children: [
               Text(
                 "WELCOME TO MY PORTFOLIO!",
-                style: TextStyles.style16regular,
+                style: TextStyles.style16regular.copyWith(letterSpacing: 2),
               ),
               horizontalSpaceSmall(),
-              SvgPicture.asset(
-                "assets/icons/wave.svg",
-                height: 20,
-                width: 20,
+              EntranceFader(
+                offset: const Offset(0, 0),
+                delay: const Duration(seconds: 1),
+                duration: const Duration(milliseconds: 800),
+                child: Image.asset(
+                  "assets/icons/hi.gif",
+                  height: 20,
+                ),
               ),
             ],
           ),
@@ -60,7 +64,7 @@ class HeaderTextWidget extends StatelessWidget {
             child: Text(
               "I specialize in building beautiful and functional mobile applications using Flutter, creating seamless user experiences for millions of users.",
               style: TextStyles.style16regular,
-              textAlign: TextAlign.center,
+              textAlign: width() < 950 ? TextAlign.center : TextAlign.left,
             ),
           ),
         ],

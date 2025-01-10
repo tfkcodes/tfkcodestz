@@ -21,17 +21,31 @@ class MySkillsSection extends StatelessWidget {
       child: Column(
         children: [
           GradientTextWidget(size: size, text1: "My Skills"),
-          Wrap(
-            spacing: 20.0,
-            runSpacing: 20.0,
-            children: mySkills.map((skill) {
-              return SkillWidget(
-                title: skill["title"]!,
-                image: skill["image"]!,
-                percentage: skill["percentage"]!,
-              );
-            }).toList(),
-          ),
+          width() > 600
+              ? Wrap(
+                  spacing: 20.0,
+                  runSpacing: 20.0,
+                  children: mySkills.map((skill) {
+                    return SkillWidget(
+                      title: skill["title"]!,
+                      image: skill["image"]!,
+                      percentage: skill["percentage"]!,
+                    );
+                  }).toList(),
+                )
+              : ListView.builder(
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  itemCount: mySkills.length,
+                  itemBuilder: (context, index) {
+                    final skill = mySkills[index];
+                    return SkillWidget(
+                      title: skill["title"]!,
+                      image: skill["image"]!,
+                      percentage: skill["percentage"]!,
+                    );
+                  },
+                )
         ],
       ),
     );
