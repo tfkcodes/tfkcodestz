@@ -2,7 +2,7 @@ final List<Map<String, String>> educationList = [
   {
     "title": "Backend Engineering",
     "date": "Nov 2023 - Present",
-    "company": "AltSchool Africa | Lagos, Nigeria",
+    "company": "AltSchool Africa",
   },
   {
     "title": "The Complete Dart Development Guide",
@@ -12,6 +12,6 @@ final List<Map<String, String>> educationList = [
   {
     "title": "Electronics and Electrical Engineering",
     "date": "May 2017 - Jan 2022",
-    "company": "Obafemi Awolowo University | Ife, Nigeria",
+    "company": "Obafemi Awolowo University",
   },
 ];
