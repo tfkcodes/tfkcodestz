@@ -4,6 +4,7 @@ import 'package:porfolio/old/screens/navbar.dart';
 import 'package:porfolio/view/sections/about_section.dart';
 import 'package:porfolio/old/screens/widgets/header_text_widget.dart';
 import 'package:porfolio/old/screens/widgets/rotating_image_widget.dart';
+import 'package:porfolio/view/sections/my_skills_section.dart';
 import 'package:porfolio/view/sections/projects_section.dart';
 import 'package:porfolio/view/sections/resume_section.dart';
 import 'package:porfolio/widgets/social_tab.dart';
@@ -31,6 +32,11 @@ class MobileView extends StatelessWidget {
           const ProjectsSection(),
           verticalSpace(0.05),
           ResumeSection(size: size),
+          verticalSpace(0.05),
+          MySkillsSection(
+            size: size,
+          ),
+          verticalSpace(0.05),
         ],
       ),
     );
