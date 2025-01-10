@@ -5,7 +5,7 @@ final List<Map<String, String>> resumeData = [
     "date": "Mar 2024 - Present",
   },
   {
-    "title": "Mobile Developer",
+    "title": "Flutter Developer",
     "company": "Kunda Kids | London, UK",
     "date": "Nov 2023 - Present",
   },
