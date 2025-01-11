@@ -19,7 +19,18 @@ class MobileView extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          SizedBox(height: 50, child: ResponsiveNavBar()),
+          SizedBox(
+            height: 50,
+            child: ResponsiveNavBar(
+              onItemSelected: (String item) {
+                if (item == 'About') scrollToSection(aboutKey);
+                if (item == 'Projects') scrollToSection(projectsKey);
+                if (item == 'Resume') scrollToSection(resumeKey);
+                if (item == 'Skills') scrollToSection(skillsKey);
+                if (item == 'Contact') scrollToSection(contactKey);
+              },
+            ),
+          ),
           const RotatingImageContainer(),
           verticalSpace(0.05),
           HeaderTextWidget(size: size),
@@ -28,12 +39,13 @@ class MobileView extends StatelessWidget {
           verticalSpace(0.06),
           StatsSection(size: size),
           verticalSpace(0.08),
-          AboutSection(size: size, imageHeight: size.height * 0.3),
-          const ProjectsSection(),
+          AboutSection(key: aboutKey, size: size, imageHeight: size.height * 0.3),
+           ProjectsSection(key: projectsKey,),
           verticalSpace(0.05),
-          ResumeSection(size: size),
+          ResumeSection(key: resumeKey, size: size),
           verticalSpace(0.05),
           MySkillsSection(
+            key: skillsKey,
             size: size,
           ),
           verticalSpace(0.05),

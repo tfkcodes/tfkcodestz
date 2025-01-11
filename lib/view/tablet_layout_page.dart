@@ -19,7 +19,18 @@ class TabletView extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          SizedBox(height: 50, child: ResponsiveNavBar()),
+          SizedBox(
+            height: 50,
+            child: ResponsiveNavBar(
+              onItemSelected: (String item) {
+                if (item == 'About') scrollToSection(aboutKey);
+                if (item == 'Projects') scrollToSection(projectsKey);
+                if (item == 'Resume') scrollToSection(resumeKey);
+                if (item == 'Skills') scrollToSection(skillsKey);
+                if (item == 'Contact') scrollToSection(contactKey);
+              },
+            ),
+          ),
           verticalSpace(0.05),
           const RotatingImageContainer(),
           verticalSpace(0.05),
@@ -29,13 +40,17 @@ class TabletView extends StatelessWidget {
           verticalSpace(0.05),
           StatsSection(size: size),
           verticalSpace(0.05),
-          AboutSection(size: size, imageHeight: size.height * 0.4),
+          AboutSection(
+              key: aboutKey, size: size, imageHeight: size.height * 0.4),
           verticalSpace(0.05),
-          const ProjectsSection(),
+          ProjectsSection(
+            key: projectsKey,
+          ),
           verticalSpace(0.05),
-          ResumeSection(size: size),
+          ResumeSection(key: resumeKey, size: size),
           verticalSpace(0.05),
           MySkillsSection(
+            key: skillsKey,
             size: size,
           ),
           verticalSpace(0.05),

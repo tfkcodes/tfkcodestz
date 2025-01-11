@@ -3,6 +3,7 @@ import 'package:porfolio/constants/app_strings.dart';
 import 'package:porfolio/constants/colors.dart';
 import 'package:porfolio/constants/const.dart';
 import 'package:porfolio/constants/styles.dart';
+import 'package:porfolio/widgets/drawer_image.dart';
 import 'package:porfolio/widgets/gradient_text.dart';
 
 class AboutSection extends StatelessWidget {
@@ -26,17 +27,21 @@ class AboutSection extends StatelessWidget {
               ? Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Container(
-                      height: imageHeight,
+                    DrawerImage(
+                      height: width() * 0.25,
                       width: width() * 0.25,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        image: const DecorationImage(
-                          image: AssetImage("assets/images/profile_new.jpg"),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
                     ),
+                    // Container(
+                    //   height: imageHeight,
+                    //   width: width() * 0.25,
+                    //   decoration: BoxDecoration(
+                    //     borderRadius: BorderRadius.circular(20),
+                    //     image: const DecorationImage(
+                    //       image: AssetImage("assets/images/profile_new.jpg"),
+                    //       fit: BoxFit.cover,
+                    //     ),
+                    //   ),
+                    // ),
                     SizedBox(
                       width: width() * 0.4,
                       child: Text(
@@ -48,19 +53,23 @@ class AboutSection extends StatelessWidget {
                 )
               : Column(
                   children: [
-                    Container(
-                      height: height() * 0.3,
+                    DrawerImage(
+                      height: width() * 0.6,
                       width: width() * 0.6,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        image: const DecorationImage(
-                          image: AssetImage(
-                            "assets/images/profile_new.jpg",
-                          ),
-                          fit: BoxFit.cover,
-                        ),
-                      ),
                     ),
+                    // Container(
+                    //   height: height() * 0.3,
+                    //   width: width() * 0.6,
+                    //   decoration: BoxDecoration(
+                    //     borderRadius: BorderRadius.circular(20),
+                    //     image: const DecorationImage(
+                    //       image: AssetImage(
+                    //         "assets/images/profile_new.jpg",
+                    //       ),
+                    //       fit: BoxFit.cover,
+                    //     ),
+                    //   ),
+                    // ),
                     verticalSpaceMedium(),
                     Text(
                       AppString.aboutMe,

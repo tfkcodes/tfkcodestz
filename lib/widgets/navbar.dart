@@ -3,18 +3,28 @@ import 'package:porfolio/constants/const.dart';
 import 'package:porfolio/constants/styles.dart';
 
 class ResponsiveNavBar extends StatelessWidget {
-  final List<String> menuItems = ['Projects', 'Resume', 'Skills', 'Contact'];
+  final List<String> menuItems = [
+    'About',
+    'Projects',
+    'Resume',
+    'Skills',
+    'Contact',
+  ];
+  final ValueChanged<String> onItemSelected;
 
-  ResponsiveNavBar({super.key});
+  ResponsiveNavBar({super.key, required this.onItemSelected});
 
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
         if (constraints.maxWidth > 950) {
-          return DesktopNavBar(menuItems: menuItems);
+          return DesktopNavBar(
+              menuItems: menuItems, onItemSelected: onItemSelected);
         } else {
-          return MobileNavBar(menuItems: menuItems);
+          return MobileNavBar(
+            menuItems: menuItems,
+          );
         }
       },
     );
@@ -23,8 +33,10 @@ class ResponsiveNavBar extends StatelessWidget {
 
 class DesktopNavBar extends StatelessWidget {
   final List<String> menuItems;
+  final ValueChanged<String> onItemSelected;
 
-  const DesktopNavBar({super.key, required this.menuItems});
+  const DesktopNavBar(
+      {super.key, required this.menuItems, required this.onItemSelected});
 
   @override
   Widget build(BuildContext context) {
@@ -43,9 +55,12 @@ class DesktopNavBar extends StatelessWidget {
                     padding: EdgeInsets.symmetric(
                       horizontal: width() * 0.02,
                     ),
-                    child: Text(
-                      item,
-                      style: TextStyles.style18bold,
+                    child: GestureDetector(
+                      onTap: () => onItemSelected(item),
+                      child: Text(
+                        item,
+                        style: TextStyles.style18bold,
+                      ),
                     ),
                   ),
                 )
@@ -60,7 +75,10 @@ class DesktopNavBar extends StatelessWidget {
 class MobileNavBar extends StatelessWidget {
   final List<String> menuItems;
 
-  const MobileNavBar({super.key, required this.menuItems});
+  const MobileNavBar({
+    super.key,
+    required this.menuItems,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -88,8 +106,10 @@ class MobileNavBar extends StatelessWidget {
 
 class MobileDrawer extends StatelessWidget {
   final List<String> menuItems;
+  final ValueChanged<String> onItemSelected;
 
-  const MobileDrawer({super.key, required this.menuItems});
+  const MobileDrawer(
+      {super.key, required this.menuItems, required this.onItemSelected});
 
   @override
   Widget build(BuildContext context) {
@@ -117,8 +137,7 @@ class MobileDrawer extends StatelessWidget {
                   style: TextStyles.style18bold,
                 ),
                 onTap: () {
-                  // Handle navigation here
-                  Navigator.of(context).pop();
+                  onItemSelected(item);
                 },
               ),
             ),

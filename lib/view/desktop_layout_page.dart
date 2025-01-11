@@ -20,7 +20,15 @@ class DesktopView extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          ResponsiveNavBar(),
+          ResponsiveNavBar(
+            onItemSelected: (String item) {
+              if (item == 'About') scrollToSection(aboutKey);
+              if (item == 'Projects') scrollToSection(projectsKey);
+              if (item == 'Resume') scrollToSection(resumeKey);
+              if (item == 'Skills') scrollToSection(skillsKey);
+              if (item == 'Contact') scrollToSection(contactKey);
+            },
+          ),
           SectionSpacing(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -43,13 +51,17 @@ class DesktopView extends StatelessWidget {
           verticalSpace(0.05),
           StatsSection(size: size),
           verticalSpace(0.05),
-          AboutSection(size: size, imageHeight: size.height * 0.6),
+          AboutSection(
+              key: aboutKey, size: size, imageHeight: size.height * 0.6),
           verticalSpace(0.05),
-          const ProjectsSection(),
+          ProjectsSection(
+            key: projectsKey,
+          ),
           verticalSpace(0.05),
-          ResumeSection(size: size),
+          ResumeSection(key: resumeKey, size: size),
           verticalSpace(0.05),
           MySkillsSection(
+            key: skillsKey,
             size: size,
           ),
           verticalSpace(0.05),
