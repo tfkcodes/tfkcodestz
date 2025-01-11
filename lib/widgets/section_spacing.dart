@@ -11,6 +11,7 @@ class SectionSpacing extends StatelessWidget {
     return Container(
       margin: EdgeInsets.symmetric(
         vertical: height() * 0.12,
+        horizontal: width() * 0.05,
       ),
       child: child,
     );

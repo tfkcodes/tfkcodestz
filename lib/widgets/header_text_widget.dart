@@ -60,7 +60,7 @@ class HeaderTextWidget extends StatelessWidget {
             text1: "Flutter Developer",
           ),
           SizedBox(
-            width: width() > 950 ? width() * 0.5 : width() * 0.85,
+            width: width() > 950 ? width() * 0.37 : width() * 0.85,
             child: Text(
               "I specialize in building beautiful and functional mobile applications using Flutter, creating seamless user experiences for millions of users.",
               style: TextStyles.style16regular,

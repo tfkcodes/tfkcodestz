@@ -41,7 +41,7 @@ class SocialLarge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: width() * 0.5,
+      width: width() * 0.37,
       child: const Row(
         children: [
           DownloadCVButton(),
