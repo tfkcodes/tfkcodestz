@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/const.dart';
-import 'package:porfolio/old/screens/widgets/count_container_widget.dart';
+import 'package:porfolio/widgets/count_container_widget.dart';
 
 class StatsSection extends StatelessWidget {
   final Size size;

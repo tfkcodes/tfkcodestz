@@ -39,10 +39,13 @@ class MySkillsSection extends StatelessWidget {
                   itemCount: mySkills.length,
                   itemBuilder: (context, index) {
                     final skill = mySkills[index];
-                    return SkillWidget(
-                      title: skill["title"]!,
-                      image: skill["image"]!,
-                      percentage: skill["percentage"]!,
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 10.0),
+                      child: SkillWidget(
+                        title: skill["title"]!,
+                        image: skill["image"]!,
+                        percentage: skill["percentage"]!,
+                      ),
                     );
                   },
                 )

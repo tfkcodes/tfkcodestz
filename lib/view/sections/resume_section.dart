@@ -32,7 +32,24 @@ class ResumeSection extends StatelessWidget {
                   width: width() > 950 ? width() * 0.3 : width() * 0.4,
                   child: Column(
                     children: [
-                      GradientTextWidget(size: size, text1: "My Experience"),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Image.asset(
+                              "assets/icons/experience.png",
+                              height: width() > 950
+                                  ? width() * 0.03
+                                  : width() * 0.05,
+                              color: studio,
+                            ),
+                          ),
+                          GradientTextWidget(
+                              size: size, text1: "My Experience"),
+                        ],
+                      ),
                       ListView.separated(
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
@@ -55,7 +72,23 @@ class ResumeSection extends StatelessWidget {
                   width: width() > 950 ? width() * 0.3 : width() * 0.4,
                   child: Column(
                     children: [
-                      GradientTextWidget(size: size, text1: "My Education"),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Image.asset(
+                              "assets/icons/education.png",
+                              height: width() > 950
+                                  ? width() * 0.03
+                                  : width() * 0.05,
+                              color: studio,
+                            ),
+                          ),
+                          GradientTextWidget(size: size, text1: "My Education"),
+                        ],
+                      ),
                       ListView.separated(
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
@@ -77,14 +110,27 @@ class ResumeSection extends StatelessWidget {
               ],
             )
           : Column(
-              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
                   width: width() < 600 ? width() * 0.8 : width() * 0.6,
                   child: Column(
                     children: [
-                      GradientTextWidget(size: size, text1: "My Experience"),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(5.0),
+                            child: Image.asset(
+                              "assets/icons/experience.png",
+                              height: width() * 0.1,
+                              color: studio,
+                            ),
+                          ),
+                          GradientTextWidget(
+                              size: size, text1: "My Experience"),
+                        ],
+                      ),
                       ListView.separated(
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
@@ -108,7 +154,21 @@ class ResumeSection extends StatelessWidget {
                   width: width() < 600 ? width() * 0.8 : width() * 0.6,
                   child: Column(
                     children: [
-                      GradientTextWidget(size: size, text1: "My Education"),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Image.asset(
+                              "assets/icons/education.png",
+                              height: width() * 0.1,
+                              color: studio,
+                            ),
+                          ),
+                          GradientTextWidget(size: size, text1: "My Education"),
+                        ],
+                      ),
                       ListView.separated(
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
@@ -127,6 +187,7 @@ class ResumeSection extends StatelessWidget {
                     ],
                   ),
                 ),
+                verticalSpace(0.05),
               ],
             ),
     );

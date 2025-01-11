@@ -1,4 +1,4 @@
-import 'package:porfolio/old/model/project_model.dart';
+import 'package:porfolio/model/project_model.dart';
 
 List<Project> myProjects = [
   Project(

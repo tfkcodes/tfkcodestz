@@ -1,13 +1,13 @@
 final List<Map<String, String>> resumeData = [
   {
-    "title": "Flutter Developer",
-    "company": "Kunda Kids | London, UK",
-    "date": "Nov 2023 - Present",
-  },
-  {
     "title": "Mobile Engineer",
     "company": "MoniMoore | Lagos, Nigeria",
     "date": "Mar 2024 - Present",
+  },
+  {
+    "title": "Mobile Developer",
+    "company": "Kunda Kids | London, UK",
+    "date": "Nov 2023 - Present",
   },
   {
     "title": "Mobile  Developer",

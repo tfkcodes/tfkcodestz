@@ -15,14 +15,14 @@ final List<Map<String, dynamic>> mySkills = [
     "image": 'assets/icons/firebase.png',
   },
   {
-    "percentage": 0.9,
-    "title": 'Git',
-    "image": 'assets/icons/git.png',
-  },
-  {
     "percentage": 0.5,
     "title": 'Bloc',
     "image": 'assets/icons/bloc.png',
+  },
+  {
+    "percentage": 0.9,
+    "title": 'Git',
+    "image": 'assets/icons/git.png',
   },
   {
     "percentage": 0.93,

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:porfolio/constants/colors.dart';
 import 'package:porfolio/constants/const.dart';
 import 'package:porfolio/constants/styles.dart';
-import 'package:porfolio/old/model/project_model.dart';
+import 'package:porfolio/model/project_model.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 
 class ProjectCard extends StatefulWidget {

@@ -39,7 +39,7 @@ class _LoadingPageState extends State<LoadingPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Lottie.asset(
-                'assets/icons/loading.json',
+                'assets/json/loading.json',
                 width: width() * 0.5,
               ),
             ],

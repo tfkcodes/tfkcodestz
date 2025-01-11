@@ -26,7 +26,7 @@ class _ResumeCardState extends State<ResumeCard> {
   @override
   Widget build(BuildContext context) {
     return VisibilityDetector(
-      key: Key(widget.title),
+      key: Key(widget.company),
       onVisibilityChanged: (info) {
         if (info.visibleFraction > 0.1 && !_isVisible) {
           setState(() => _isVisible = true);
