@@ -9,7 +9,7 @@ const Color hippieBlue = Color(0xFF6998b6);
 const Color rouge = Color(0xFFa24379);
 const Color revolver = Color(0xFF271b3d);
 const Color cocoaBrown = Color(0xFF332222);
-const Color capeCod = Color(0xFF414443);
+const Color capeCod = Color.fromARGB(255, 93, 95, 95);
 const Color black = Color(0xFF021528);
 const Color white = Color(0xFFFFFFFF);
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/const.dart';
+import 'package:porfolio/view/sections/contact_me_section.dart';
 import 'package:porfolio/widgets/navbar.dart';
 import 'package:porfolio/widgets/header_text_widget.dart';
 import 'package:porfolio/widgets/rotating_image_widget.dart';
@@ -20,6 +21,10 @@ class DesktopView extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
+          ContactMeSection(
+            key: contactKey,
+            size: size,
+          ),
           ResponsiveNavBar(
             onItemSelected: (String item) {
               if (item == 'About') scrollToSection(aboutKey);
@@ -64,6 +69,11 @@ class DesktopView extends StatelessWidget {
             key: skillsKey,
             size: size,
           ),
+          verticalSpace(0.1),
+          // ContactMeSection(
+          //   key: contactKey,
+          //   size: size,
+          // ),
           verticalSpace(0.05),
         ],
       ),
