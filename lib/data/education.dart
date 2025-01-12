@@ -1,7 +1,7 @@
 final List<Map<String, String>> educationList = [
   {
     "title": "Backend Engineering",
-    "date": "Nov 2023 - Present",
+    "date": "Nov 2024 - Present",
     "company": "AltSchool Africa",
   },
   {
