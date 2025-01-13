@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:porfolio/constants/const.dart';
+import 'package:porfolio/view/sections/contact_me_section.dart';
 import 'package:porfolio/widgets/navbar.dart';
 import 'package:porfolio/view/sections/about_section.dart';
 import 'package:porfolio/widgets/header_text_widget.dart';
@@ -19,6 +20,10 @@ class MobileView extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
+           ContactMeSection(
+            key: contactKey,
+            size: size,
+          ),
           SizedBox(
             height: 50,
             child: ResponsiveNavBar(

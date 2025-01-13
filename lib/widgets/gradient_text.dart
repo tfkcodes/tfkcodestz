@@ -12,16 +12,17 @@ class GradientTextWidget extends StatelessWidget {
   final Color? color2;
   final double? fsize;
   final FontWeight? fw;
-  const GradientTextWidget(
-      {super.key,
-      required this.size,
-      this.alignment,
-      this.fw,
-      this.color1,
-      this.text1,
-      this.text2,
-      this.color2,
-      this.fsize});
+  const GradientTextWidget({
+    super.key,
+    required this.size,
+    this.alignment,
+    this.fw,
+    this.color1,
+    this.text1,
+    this.text2,
+    this.color2,
+    this.fsize,
+  });
 
   final Size size;
 
@@ -35,11 +36,10 @@ class GradientTextWidget extends StatelessWidget {
         paleSlate,
       ],
       style: TextStyles.style24extrabold.copyWith(
-        fontSize: width() < 600
-            ? 35
-            : width() < 950
-                ? width() * 0.04
-                : width() * 0.03,
+        fontSize: fsize ??
+            (width() < 600
+                ? 35
+                : (width() < 950 ? width() * 0.04 : width() * 0.025)),
       ),
     );
   }

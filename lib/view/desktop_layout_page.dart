@@ -21,10 +21,6 @@ class DesktopView extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          ContactMeSection(
-            key: contactKey,
-            size: size,
-          ),
           ResponsiveNavBar(
             onItemSelected: (String item) {
               if (item == 'About') scrollToSection(aboutKey);
@@ -70,11 +66,10 @@ class DesktopView extends StatelessWidget {
             size: size,
           ),
           verticalSpace(0.1),
-          // ContactMeSection(
-          //   key: contactKey,
-          //   size: size,
-          // ),
-          verticalSpace(0.05),
+          ContactMeSection(
+            key: contactKey,
+            size: size,
+          ),
         ],
       ),
     );
