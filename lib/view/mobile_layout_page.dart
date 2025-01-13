@@ -20,10 +20,6 @@ class MobileView extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-           ContactMeSection(
-            key: contactKey,
-            size: size,
-          ),
           SizedBox(
             height: 50,
             child: ResponsiveNavBar(
@@ -54,6 +50,10 @@ class MobileView extends StatelessWidget {
             size: size,
           ),
           verticalSpace(0.05),
+           ContactMeSection(
+            key: contactKey,
+            size: size,
+          ),
         ],
       ),
     );

@@ -24,4 +24,9 @@ final List<Map<String, String>> resumeData = [
     "company": "TaskHaven | Lagos, Nigeria",
     "date": "May 2022 - Sep 2023",
   },
+  {
+    "title": "Mobile Developer",
+    "company": "Traipsin'Global On Wheels | Washington, US",
+    "date": "Jul 2021 - Sep 2021",
+  },
 ];
