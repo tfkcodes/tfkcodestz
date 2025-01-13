@@ -22,7 +22,7 @@ class _LoadingPageState extends State<LoadingPage> {
 
   Future<void> _simulateLoading() async {
     await Future.delayed(
-      const Duration(seconds: 1),
+      const Duration(seconds: 3),
     );
     setState(() {
       _isLoading = false;
