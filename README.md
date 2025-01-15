@@ -1,6 +1,6 @@
 # porfolio
 
-Mobile Engineer || Flutter
+Mobile Engineer
 
 ## Getting Started
 

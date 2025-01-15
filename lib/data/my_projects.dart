@@ -3,7 +3,7 @@ import 'package:porfolio/model/project_model.dart';
 List<Project> myProjects = [
   Project(
     title: 'MoniMoore',
-    subtitle: "Personal Finance Management",
+    subtitle: "Open Banking, PFM",
     description:
         'An application that offers a solution by providing an AI-powered personal finance management application that helps users to manage their finances.',
     imageUrl: 'assets/images/monimoore.png',
@@ -19,7 +19,7 @@ List<Project> myProjects = [
   ),
   Project(
     title: 'Kunda Kids',
-    subtitle: "Storytelling App for Kids",
+    subtitle: "Edu LMS, Storytelling",
     description:
         'A fun and educational storytelling app designed specifically for kids ages 3 to 8!',
     imageUrl: "assets/images/kundakids.png",
