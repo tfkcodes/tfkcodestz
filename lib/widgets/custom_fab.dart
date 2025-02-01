@@ -58,7 +58,7 @@ class _ScrollPositionIndicatorFABState
               value: progress, // Progress value
               strokeWidth: 4,
               color: studio, // Progress indicator color
-              backgroundColor: studio.withOpacity(0.2), // Track color
+              backgroundColor: studio.withValues(alpha: 0.2), // Track color
             ),
           ),
           const CircleAvatar(

@@ -57,7 +57,8 @@ class HeaderTextWidget extends StatelessWidget {
           GradientTextWidget(
             size: size,
             alignment: TextAlign.center,
-            text1: "Flutter Developer",
+            text1: "Mobile Engineer",
+            // text1: "Flutter Developer",
           ),
           SizedBox(
             width: width() > 950 ? width() * 0.37 : width() * 0.85,

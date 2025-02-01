@@ -16,7 +16,7 @@ class StatsSection extends StatelessWidget {
         children: [
           CountWidget(
             size: size,
-            text1: "3+",
+            text1: "4",
             text2: "Years of",
             text3: "Experience",
           ),
