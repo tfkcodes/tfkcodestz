@@ -165,7 +165,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
         //                       Expanded(
         //                         child: TextInputForm(
         //                           hint: "First Name",
-        //                           bgColor: ebony.withOpacity(
+        //                           bgColor: ebony.withValues(alpha:
         //                             0.8,
         //                           ),
         //                           validator: (value) {
@@ -180,7 +180,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
         //                       Expanded(
         //                         child: TextInputForm(
         //                           hint: "Last Name",
-        //                           bgColor: ebony.withOpacity(
+        //                           bgColor: ebony.withValues(alpha:
         //                             0.8,
         //                           ),
         //                         ),
@@ -192,7 +192,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
         //                       Expanded(
         //                         child: TextInputForm(
         //                           hint: "Email Address",
-        //                           bgColor: ebony.withOpacity(
+        //                           bgColor: ebony.withValues(alpha:
         //                             0.8,
         //                           ),
         //                           validator: (value) {
@@ -207,7 +207,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
         //                       Expanded(
         //                         child: TextInputForm(
         //                           hint: "Phone Number",
-        //                           bgColor: ebony.withOpacity(
+        //                           bgColor: ebony.withValues(alpha:
         //                             0.8,
         //                           ),
         //                         ),
@@ -217,7 +217,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
         //                   TextInputForm(
         //                     hint: "Message",
         //                     maxLines: 7,
-        //                     bgColor: ebony.withOpacity(
+        //                     bgColor: ebony.withValues(alpha:
         //                       0.8,
         //                     ),
         //                     validator: (value) {
@@ -351,7 +351,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
         //               30,
         //             ),
         //             decoration: BoxDecoration(
-        //               color: valhalla.withOpacity(0.6),
+        //               color: valhalla.withValues(alpha:0.6),
         //               borderRadius: BorderRadius.circular(
         //                 15,
         //               ),
@@ -373,7 +373,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
         //                     Expanded(
         //                       child: TextInputForm(
         //                         hint: "First Name",
-        //                         bgColor: ebony.withOpacity(
+        //                         bgColor: ebony.withValues(alpha:
         //                           0.8,
         //                         ),
         //                       ),
@@ -382,7 +382,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
         //                     Expanded(
         //                       child: TextInputForm(
         //                         hint: "Last Name",
-        //                         bgColor: ebony.withOpacity(
+        //                         bgColor: ebony.withValues(alpha:
         //                           0.8,
         //                         ),
         //                       ),
@@ -394,7 +394,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
         //                     Expanded(
         //                       child: TextInputForm(
         //                         hint: "Email Address",
-        //                         bgColor: ebony.withOpacity(
+        //                         bgColor: ebony.withValues(alpha:
         //                           0.8,
         //                         ),
         //                       ),
@@ -403,7 +403,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
         //                     Expanded(
         //                       child: TextInputForm(
         //                         hint: "Phone Number",
-        //                         bgColor: ebony.withOpacity(
+        //                         bgColor: ebony.withValues(alpha:
         //                           0.8,
         //                         ),
         //                       ),
@@ -413,7 +413,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
         //                 TextInputForm(
         //                   hint: "Message",
         //                   maxLines: 7,
-        //                   bgColor: ebony.withOpacity(
+        //                   bgColor: ebony.withValues(alpha:
         //                     0.8,
         //                   ),
         //                 ),

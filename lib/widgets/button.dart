@@ -40,7 +40,7 @@ class AppButton extends StatelessWidget {
           gradient: LinearGradient(
             colors: [
               studio,
-              studio.withOpacity(0.5),
+              studio.withValues(alpha: 0.5),
             ],
           ),
         ),

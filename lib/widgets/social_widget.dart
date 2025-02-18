@@ -18,7 +18,7 @@ class SocialWidget extends StatelessWidget {
           decoration: BoxDecoration(
               color: Colors.transparent,
               shape: BoxShape.circle,
-              border: Border.all(color: studio.withOpacity(0.5))),
+              border: Border.all(color: studio.withValues(alpha: 0.5))),
           child: Center(
             child: IconButton(
               hoverColor: paleSlate,
@@ -48,7 +48,7 @@ class SocialWidget extends StatelessWidget {
           decoration: BoxDecoration(
               color: Colors.transparent,
               shape: BoxShape.circle,
-              border: Border.all(color: studio.withOpacity(0.5))),
+              border: Border.all(color: studio.withValues(alpha: 0.5))),
           child: Center(
             child: IconButton(
               hoverColor: paleSlate,
@@ -77,7 +77,7 @@ class SocialWidget extends StatelessWidget {
           decoration: BoxDecoration(
               color: Colors.transparent,
               shape: BoxShape.circle,
-              border: Border.all(color: studio.withOpacity(0.5))),
+              border: Border.all(color: studio.withValues(alpha: 0.5))),
           child: Center(
             child: IconButton(
               hoverColor: paleSlate,
