@@ -47,8 +47,7 @@ class _SkillWidgetState extends State<SkillWidget> {
                     horizontal: 40,
                   ),
                   decoration: BoxDecoration(
-                    color:
-                        _isVisible ? studio.withValues(alpha: 0.2) : revolver,
+                    color: _isVisible ? studio.withOpacity(0.2) : revolver,
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
                       color: _isVisible ? studio : revolver,
@@ -108,8 +107,7 @@ class _SkillWidgetState extends State<SkillWidget> {
                     horizontal: 40,
                   ),
                   decoration: BoxDecoration(
-                    color:
-                        _isHovered ? studio.withValues(alpha: 0.2) : revolver,
+                    color: _isHovered ? studio.withOpacity(0.2) : revolver,
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(
                       color: _isHovered ? studio : revolver,
@@ -191,7 +189,7 @@ class _SkillWidgetState extends State<SkillWidget> {
 //               horizontal: 40,
 //             ),
 //             decoration: BoxDecoration(
-//               color: _isHovered ? studio.withValues(alpha:0.2) : revolver,
+//               color: _isHovered ? studio.withOpacity(0.2) : revolver,
 //               borderRadius: BorderRadius.circular(20),
 //               border: Border.all(
 //                 color: _isHovered ? studio : revolver,

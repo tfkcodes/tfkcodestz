@@ -37,7 +37,7 @@ class _ProjectCardState extends State<ProjectCard> {
               height: width() * 0.07,
               width: width() * 0.07,
               decoration: BoxDecoration(
-                color: valhalla.withValues(alpha: 0.8),
+                color: valhalla.withOpacity(0.8),
                 borderRadius: BorderRadius.circular(15),
               ),
               child: Stack(
@@ -185,7 +185,7 @@ class _ProjectCardState extends State<ProjectCard> {
                   height: width() * 0.07,
                   width: width() * 0.07,
                   decoration: BoxDecoration(
-                    color: valhalla.withValues(alpha: 0.8),
+                    color: valhalla.withOpacity(0.8),
                     borderRadius: BorderRadius.circular(15),
                   ),
                   child: Stack(
