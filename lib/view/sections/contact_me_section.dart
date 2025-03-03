@@ -63,7 +63,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
                 ),
                 horizontalSpaceMedium(),
                 Text(
-                  "odapo138@gmail.com",
+                  "lucianojackson048@gmail.com",
                   style: TextStyles.style24extrabold,
                 ),
                 horizontalSpaceMedium(),
@@ -71,7 +71,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
                   onTap: () {
                     Clipboard.setData(
                       const ClipboardData(
-                        text: "odapo138@gmail.com",
+                        text: "lucianojackson048@gmail.com",
                       ),
                     );
                   },
@@ -98,7 +98,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
                 ),
                 horizontalSpaceMedium(),
                 Text(
-                  "+(234) 702 5214 514",
+                  "+(255) 672 084 262",
                   style: TextStyles.style24extrabold,
                 ),
                 horizontalSpaceMedium(),
@@ -106,7 +106,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
                   onTap: () {
                     Clipboard.setData(
                       const ClipboardData(
-                        text: "+(234) 702 5214 514",
+                        text: "+(255) 672 084 262",
                       ),
                     );
                   },
@@ -122,7 +122,7 @@ class _ContactMeSectionState extends State<ContactMeSection> {
             ),
             verticalSpace(0.1),
             Text(
-              "© 2025 All Rights Reserved by Oladapo Olatubosun",
+              "© 2025 All Rights Reserved by Luciano Jackson",
               style: TextStyles.style16regular,
               textAlign: TextAlign.center,
             ),
