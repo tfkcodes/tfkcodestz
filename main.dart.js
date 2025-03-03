@@ -77526,7 +77526,7 @@ r=B.b.gcd(q.a.c.f).at
 r.toString
 q.aq(new A.akG(q,r,s))},
 M(a){var s=null
-return A.ks(s,A.pE(B.S,A.a([A.bA(new A.vW(4,this.d,A.a_(51,125,79,240),B.a0,s,s,s,s),60,60),B.Ar],t.p),B.cd),B.a7,!1,s,s,s,s,s,s,s,s,s,s,s,s,new A.akH(this),s,s,s)}}
+return A.ks(s,A.pE(B.S,A.a([A.bA(new A.vW(4,this.d,A.a_(51,217,160,102),B.a0,s,s,s,s),60,60),B.Ar],t.p),B.cd),B.a7,!1,s,s,s,s,s,s,s,s,s,s,s,s,new A.akH(this),s,s,s)}}
 A.akG.prototype={
 $0(){this.a.d=B.c.dK(this.b/this.c,0,1)},
 $S:0}
@@ -77537,7 +77537,7 @@ A.a_5.prototype={
 gr4(){return A.c2([B.cO,B.c9,B.dT,B.fg],t.Au)}}
 A.Hu.prototype={
 M(a){var s=null,r=A.ja(20),q=A.qH(B.cv,1)
-return A.ks(s,A.cU(s,A.dZ(A.a([A.cl("Download CV",s,s,$.nu(),s,s),B.Og,B.EO],t.p),B.y,B.af,B.z),B.q,s,s,new A.ca(B.x,s,q,r,s,s,B.a2),s,50,s,s,s,s,250),B.a7,!1,s,s,s,s,s,s,s,s,s,s,s,s,new A.a_M(),s,s,s)}}
+return A.ks(s,A.cU(s,A.dZ(A.a([A.cl("Download CV",s,s,$.nu(),s,s),B.Og,B.EP],t.p),B.y,B.af,B.z),B.q,s,s,new A.ca(B.x,s,q,r,s,s,B.a2),s,50,s,s,s,s,250),B.a7,!1,s,s,s,s,s,s,s,s,s,s,s,s,new A.a_M(),s,s,s)}}
 A.a_M.prototype={
 $0(){var s=0,r=A.V(t.H)
 var $async$$0=A.W(function(a,b){if(a===1)return A.S(b,r)
@@ -77864,7 +77864,7 @@ A.r(p).toString
 p=r.d
 if(p==null){p=self.window.devicePixelRatio
 if(p===0)p=1}p=s.N(0,p)
-s=A.a_(204,49,26,95)
+s=A.a_(204,93,64,55)
 o=A.ja(15)
 n=A.cU(a0,a0,B.q,a0,a0,new A.ca(a0,A.asY(B.ej,new A.kb(a.a.c.d,a0,a0),a0),a0,a0,a0,a0,B.a2),a0,a0,B.EA,a0,a0,a0,a0)
 if(a.d){m=$.q().xr
@@ -77922,7 +77922,7 @@ A.r(m).toString
 m=r.d
 if(m==null){m=self.window.devicePixelRatio
 if(m===0)m=1}m=o.N(0,m)
-o=A.a_(204,49,26,95)
+o=A.a_(204,93,64,55)
 l=A.ja(15)
 k=A.cU(a0,a0,B.q,a0,a0,new A.ca(a0,A.asY(B.ej,new A.kb(a.a.c.d,a0,a0),a0),a0,a0,a0,a0,B.a2),a0,a0,B.Ez,a0,a0,a0,a0)
 if(a.e){j=$.q().xr
@@ -78240,7 +78240,7 @@ q.toString
 A.r(q).toString
 s=s.d
 if(s==null){s=self.window.devicePixelRatio
-if(s===0)s=1}s=r.N(0,s).a*0.4}return A.t1(A.lM(B.S,o,o,B.O,new A.ca(o,B.DQ,A.qH(p.d?B.a0:B.l8,1.2),A.ja(20),o,o,B.a2),B.dt,o,n,o,o,m,s),B.bv,new A.akm(p),new A.akn(p),o)}}
+if(s===0)s=1}s=r.N(0,s).a*0.4}return A.t1(A.lM(B.S,o,o,B.O,new A.ca(o,B.DQ,A.qH(p.d?B.a0:B.la,1.2),A.ja(20),o,o,B.a2),B.dt,o,n,o,o,m,s),B.bv,new A.akm(p),new A.akn(p),o)}}
 A.akm.prototype={
 $1(a){var s=this.a
 return s.aq(new A.akl(s))},
@@ -78362,7 +78362,7 @@ A.r(o).toString
 r=r.d
 if(r==null){r=self.window.devicePixelRatio
 if(r===0)r=1}r=p.N(0,r).a*0.3}p=h.e
-o=p?A.a_(51,125,79,240):B.dj
+o=p?A.a_(51,217,160,102):B.dj
 n=A.ja(20)
 m=A.qH(p?B.a0:B.dj,1.2)
 l=p?B.x:B.f7
@@ -78396,7 +78396,7 @@ r=r.d
 if(r==null){r=self.window.devicePixelRatio
 if(r===0)r=1}r=s.N(0,r)
 s=h.d
-p=s?A.a_(51,125,79,240):B.dj
+p=s?A.a_(51,217,160,102):B.dj
 o=A.ja(20)
 n=A.qH(s?B.a0:B.dj,1.2)
 m=s?B.x:B.f7
@@ -78464,11 +78464,11 @@ r=$.bs().d
 if(r==null){r=self.window.devicePixelRatio
 if(r===0)r=1}return A.bA(B.Mk,null,s.N(0,r).a*0.37)}}
 A.N3.prototype={
-M(a){var s,r=null,q=B.c.P(127.5),p=A.qH(A.a_(q,125,79,240),1)
-p=A.cU(r,A.nM(A.xD(r,B.cv,B.EN,new A.acO(),r,r),r,r),B.q,r,r,new A.ca(B.x,r,p,r,r,r,B.bJ),r,40,r,r,r,r,40)
-s=A.qH(A.a_(q,125,79,240),1)
-s=A.cU(r,A.nM(A.xD(r,B.cv,B.EP,new A.acP(),r,r),r,r),B.q,r,r,new A.ca(B.x,r,s,r,r,r,B.bJ),r,40,r,r,r,r,40)
-q=A.qH(A.a_(q,125,79,240),1)
+M(a){var s,r=null,q=B.c.P(127.5),p=A.qH(A.a_(q,217,160,102),1)
+p=A.cU(r,A.nM(A.xD(r,B.cv,B.EO,new A.acO(),r,r),r,r),B.q,r,r,new A.ca(B.x,r,p,r,r,r,B.bJ),r,40,r,r,r,r,40)
+s=A.qH(A.a_(q,217,160,102),1)
+s=A.cU(r,A.nM(A.xD(r,B.cv,B.EN,new A.acP(),r,r),r,r),B.q,r,r,new A.ca(B.x,r,s,r,r,r,B.bJ),r,40,r,r,r,r,40)
+q=A.qH(A.a_(q,217,160,102),1)
 return A.dZ(A.a([p,B.fD,s,B.fD,A.cU(r,A.nM(A.xD(r,B.cv,B.EM,new A.acQ(),r,r),r,r),B.q,r,r,new A.ca(B.x,r,q,r,r,r,B.bJ),r,40,r,r,r,r,40)],t.p),B.y,B.af,B.z)}}
 A.acO.prototype={
 $0(){var s=0,r=A.V(t.H)
@@ -84162,19 +84162,19 @@ B.kk=new A.ar(0,1/0,0,1/0)
 B.yY=new A.ar(36,1/0,36,1/0)
 B.kl=new A.ar(1/0,1/0,1/0,1/0)
 B.b5=new A.pO(0,"clamp")
-B.a0=new A.u(4286402544)
+B.a0=new A.u(4292452454)
 B.BA=new A.u(4285160164)
 B.GZ=A.a(s([B.a0,B.BA]),t.t_)
-B.G_=new A.iy(B.ee,B.d6,B.b5,B.GZ,null,null)
+B.FZ=new A.iy(B.ee,B.d6,B.b5,B.GZ,null,null)
 B.bJ=new A.FZ(1,"circle")
-B.yZ=new A.ca(null,null,null,null,null,B.G_,B.bJ)
-B.ey=new A.u(4278846994)
+B.yZ=new A.ca(null,null,null,null,null,B.FZ,B.bJ)
+B.ey=new A.u(4282263331)
+B.la=new A.u(4284301367)
+B.GY=A.a(s([B.ey,B.la]),t.t_)
+B.G_=new A.iy(B.ee,B.d6,B.b5,B.GY,null,null)
 B.a2=new A.FZ(0,"rectangle")
+B.z_=new A.ca(null,null,null,null,null,B.G_,B.a2)
 B.km=new A.ca(B.ey,null,null,null,null,null,B.a2)
-B.l8=new A.u(4281408095)
-B.GY=A.a(s([B.ey,B.l8]),t.t_)
-B.FZ=new A.iy(B.ee,B.d6,B.b5,B.GY,null,null)
-B.z_=new A.ca(null,null,null,null,null,B.FZ,B.a2)
 B.z0=new A.vN(1,"contain")
 B.ej=new A.vN(2,"cover")
 B.h5=new A.vN(6,"scaleDown")
@@ -84544,9 +84544,9 @@ B.B5=new A.u(4281018672)
 B.Ba=new A.u(4281742395)
 B.lj=new A.u(4291478736)
 B.BW=new A.u(4287860633)
-B.l9=new A.u(4281478965)
+B.l8=new A.u(4281478965)
 B.hE=new A.u(4284960932)
-B.Ay=new A.qW(B.aj,B.dm,B.Bb,B.hB,B.eB,B.eB,B.dm,B.hv,B.hB,B.hF,B.B9,B.hA,B.eA,B.eA,B.hF,B.ht,B.hA,B.hG,B.Bm,B.hD,B.eC,B.eC,B.hG,B.hx,B.hD,B.CM,B.Bs,B.BS,B.ln,B.hs,B.ez,B.hz,B.hs,B.Bc,B.AW,B.hu,B.B1,B.B5,B.Ba,B.lj,B.BW,B.hz,B.m,B.m,B.ez,B.l9,B.hE,B.dm,B.hs,B.ez)
+B.Ay=new A.qW(B.aj,B.dm,B.Bb,B.hB,B.eB,B.eB,B.dm,B.hv,B.hB,B.hF,B.B9,B.hA,B.eA,B.eA,B.hF,B.ht,B.hA,B.hG,B.Bm,B.hD,B.eC,B.eC,B.hG,B.hx,B.hD,B.CM,B.Bs,B.BS,B.ln,B.hs,B.ez,B.hz,B.hs,B.Bc,B.AW,B.hu,B.B1,B.B5,B.Ba,B.lj,B.BW,B.hz,B.m,B.m,B.ez,B.l8,B.hE,B.dm,B.hs,B.ez)
 B.i=new A.u(4294967295)
 B.Bt=new A.u(4284636017)
 B.BF=new A.u(4286403168)
@@ -84560,7 +84560,7 @@ B.CN=new A.u(4294176247)
 B.CC=new A.u(4293715696)
 B.BC=new A.u(4286149758)
 B.CQ=new A.u(4294307831)
-B.Az=new A.qW(B.a3,B.hE,B.i,B.eB,B.hv,B.eB,B.dm,B.hv,B.hB,B.Bt,B.i,B.eA,B.ht,B.eA,B.hF,B.ht,B.hA,B.BF,B.i,B.eC,B.hx,B.eC,B.hG,B.hx,B.hD,B.C9,B.i,B.ln,B.Bf,B.hH,B.hu,B.CA,B.Cx,B.hH,B.i,B.CV,B.CN,B.CC,B.ez,B.hz,B.BC,B.lj,B.m,B.m,B.l9,B.CQ,B.dm,B.hE,B.hH,B.hu)
+B.Az=new A.qW(B.a3,B.hE,B.i,B.eB,B.hv,B.eB,B.dm,B.hv,B.hB,B.Bt,B.i,B.eA,B.ht,B.eA,B.hF,B.ht,B.hA,B.BF,B.i,B.eC,B.hx,B.eC,B.hG,B.hx,B.hD,B.C9,B.i,B.ln,B.Bf,B.hH,B.hu,B.CA,B.Cx,B.hH,B.i,B.CV,B.CN,B.CC,B.ez,B.hz,B.BC,B.lj,B.m,B.m,B.l8,B.CQ,B.dm,B.hE,B.hH,B.hu)
 B.kY=new A.u(1087163596)
 B.AA=new A.u(134217728)
 B.AB=new A.u(1627389952)
@@ -84579,15 +84579,15 @@ B.l4=new A.u(4280191205)
 B.l5=new A.u(4280361249)
 B.l6=new A.u(4280391411)
 B.B4=new A.u(4280751434)
-B.dj=new A.u(4280752957)
 B.hw=new A.u(4281348144)
 B.hy=new A.u(4282532418)
+B.dj=new A.u(4283051050)
 B.hC=new A.u(4284572001)
 B.Bw=new A.u(4284809178)
 B.lf=new A.u(4287679225)
 B.lg=new A.u(4288585374)
 B.li=new A.u(4290502395)
-B.cv=new A.u(4291608005)
+B.cv=new A.u(4291077252)
 B.Cn=new A.u(4292030255)
 B.ll=new A.u(4292927712)
 B.lm=new A.u(4293128957)
@@ -84633,8 +84633,8 @@ B.hK=new A.fp(B.dl,"inactiveGray",null,B.dl,B.dk,B.dl,B.dk,B.dl,B.dk,B.dl,B.dk,0
 B.hr=new A.u(4278221567)
 B.l2=new A.u(4278879487)
 B.l0=new A.u(4278206685)
-B.la=new A.u(4282424575)
-B.DH=new A.fp(B.hr,"systemBlue",null,B.hr,B.l2,B.l0,B.la,B.hr,B.l2,B.l0,B.la,0)
+B.l9=new A.u(4282424575)
+B.DH=new A.fp(B.hr,"systemBlue",null,B.hr,B.l2,B.l0,B.l9,B.hr,B.l2,B.l0,B.l9,0)
 B.AZ=new A.u(4280032286)
 B.B3=new A.u(4280558630)
 B.lu=new A.fp(B.i,"systemBackground",null,B.i,B.m,B.i,B.m,B.i,B.AZ,B.i,B.B3,0)
@@ -84762,12 +84762,12 @@ B.EK=new A.x4(1,B.hT,B.Ao,null)
 B.EL=new A.x7(null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Fc=new A.xG(58945,"FontAwesomeBrands","font_awesome_flutter",!1)
 B.EM=new A.o8(B.Fc,15,B.a0,null)
-B.Fd=new A.xG(61665,"FontAwesomeBrands","font_awesome_flutter",!1)
-B.EN=new A.o8(B.Fd,15,B.a0,null)
-B.Ff=new A.a2X(61465,"FontAwesomeSolid","font_awesome_flutter",!1)
-B.EO=new A.o8(B.Ff,18,B.cv,null)
 B.Fe=new A.xG(61595,"FontAwesomeBrands","font_awesome_flutter",!1)
-B.EP=new A.o8(B.Fe,15,B.a0,null)
+B.EN=new A.o8(B.Fe,15,B.a0,null)
+B.Fd=new A.xG(61665,"FontAwesomeBrands","font_awesome_flutter",!1)
+B.EO=new A.o8(B.Fd,15,B.a0,null)
+B.Ff=new A.a2X(61465,"FontAwesomeSolid","font_awesome_flutter",!1)
+B.EP=new A.o8(B.Ff,18,B.cv,null)
 B.EQ=new A.o9(B.bO,null)
 B.ER=new A.xc(null)
 B.eL=new A.oa(0,"none")
