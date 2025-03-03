@@ -1,12 +1,12 @@
 final List<Map<String, String>> educationList = [
   {
-    "title": "UI/UX Design Course",
-    "date": "Sept 2023 - Present",
+    "title": "The Complete Dart Development Guide",
+    "date": "December 2021",
     "company": "Udemy",
   },
   {
-    "title": "The Complete Dart Development Guide",
-    "date": "December 2021",
+    "title": "UI/UX Design Course",
+    "date": "Sept 2023 - Present",
     "company": "Udemy",
   },
   {
