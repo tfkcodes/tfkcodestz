@@ -27047,7 +27047,7 @@ A.am6.prototype={
 $1(a){var s=A.e8().b
 if(s==null)s=null
 else{s=s.canvasKitBaseUrl
-if(s==null)s=null}return(s==null?"https://www.gstatic.com/flutter-canvaskit/36335019a8eab588c3c2ea783c618d90505be233/":s)+a},
+if(s==null)s=null}return(s==null?"https://www.gstatic.com/flutter-canvaskit/a18df97ca57a249df5d8d68cd0820600223ce262/":s)+a},
 $S:58}
 A.Z6.prototype={
 bD(a){B.c.a1(this.a.a.save())},
@@ -76853,8 +76853,8 @@ if(o===0)o=1}o=A.bA(f,p.N(0,o).b*0.05,f)
 p=A.m6(f,this.a.c,"Let's work together!")
 n=A.cl("What's next? Feel free to reach out to me if you're looking for a developer, or simply want to connect.",f,f,$.nu(),B.bj,f)
 m=t.p
-l=A.dZ(A.a([A.adp("assets/icons/chat.svg",B.eK),B.fE,A.cl("odapo138@gmail.com",f,f,$.nv(),f,f),B.fE,A.a3o(!1,!0,A.adp(e,B.eK),f,!0,f,f,f,f,f,f,f,f,f,new A.agZ(),f,f,f,f)],m),B.y,B.af,B.z)
-k=A.dZ(A.a([A.adp("assets/icons/call.svg",B.eK),B.fE,A.cl("+(234) 702 5214 514",f,f,$.nv(),f,f),B.fE,A.a3o(!1,!0,A.adp(e,B.eK),f,!0,f,f,f,f,f,f,f,f,f,new A.ah_(),f,f,f,f)],m),B.y,B.af,B.z)
+l=A.dZ(A.a([A.adp("assets/icons/chat.svg",B.eK),B.fE,A.cl("lucianojackson048@gmail.com",f,f,$.nv(),f,f),B.fE,A.a3o(!1,!0,A.adp(e,B.eK),f,!0,f,f,f,f,f,f,f,f,f,new A.agZ(),f,f,f,f)],m),B.y,B.af,B.z)
+k=A.dZ(A.a([A.adp("assets/icons/call.svg",B.eK),B.fE,A.cl("+(255) 672 084 262",f,f,$.nv(),f,f),B.fE,A.a3o(!1,!0,A.adp(e,B.eK),f,!0,f,f,f,f,f,f,f,f,f,new A.ah_(),f,f,f,f)],m),B.y,B.af,B.z)
 j=$.q().xr
 j=$.k.p$.x.h(0,j)
 j.toString
@@ -76866,7 +76866,7 @@ A.r(i).toString
 i=r.d
 if(i==null){i=self.window.devicePixelRatio
 if(i===0)i=1}i=A.bA(f,j.N(0,i).b*0.1,f)
-j=A.cl("\xa9 2025 All Rights Reserved by Oladapo Olatubosun",f,f,$.nu(),B.bj,f)
+j=A.cl("\xa9 2025 All Rights Reserved by Luciano Jackson",f,f,$.nu(),B.bj,f)
 h=$.q().xr
 h=$.k.p$.x.h(0,h)
 h.toString
@@ -76879,10 +76879,10 @@ r=r.d
 if(r==null){r=self.window.devicePixelRatio
 if(r===0)r=1}return A.cU(f,A.cZ(A.a([o,p,n,B.bf,l,B.bf,k,i,j,A.bA(f,h.N(0,r).b*0.02,f)],m),B.y,B.H,B.z),B.q,f,f,B.km,f,f,f,new A.b3(s,0,s,0),f,f,q.a)}}
 A.agZ.prototype={
-$0(){A.Gy(B.At)},
+$0(){A.Gy(B.Au)},
 $S:0}
 A.ah_.prototype={
-$0(){A.Gy(B.Au)},
+$0(){A.Gy(B.At)},
 $S:0}
 A.t4.prototype={
 M(a){var s,r,q,p,o,n,m,l=null
@@ -77307,7 +77307,7 @@ r=$.bs().d
 if(r==null){r=self.window.devicePixelRatio
 if(r===0)r=1}r=s.N(0,r).a*0.05
 s=this.c
-return A.cU(q,A.dZ(A.a([new A.wi(s,"4+","Years of","Experience",q),B.Oh,new A.wi(s,"6+","Projects","Completed",q)],t.p),B.y,B.af,B.z),B.q,q,q,q,q,q,new A.b3(r,0,r,0),q,q,q,q)}}
+return A.cU(q,A.dZ(A.a([new A.wi(s,"3+","Years of","Experience",q),B.Oh,new A.wi(s,"8+","Projects","Completed",q)],t.p),B.y,B.af,B.z),B.q,q,q,q,q,q,new A.b3(r,0,r,0),q,q,q,q)}}
 A.Nq.prototype={
 M(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=null,c=A.cd(a,d,t.w).w.a,b=A.bA(A.apO(new A.adu()),50,d)
 $.bt()
@@ -84505,8 +84505,8 @@ B.q=new A.qS(0,"none")
 B.ak=new A.qS(1,"hardEdge")
 B.dg=new A.qS(2,"antiAlias")
 B.cu=new A.qS(3,"antiAliasWithSaveLayer")
-B.At=new A.Gx("odapo138@gmail.com")
-B.Au=new A.Gx("+(234) 702 5214 514")
+B.At=new A.Gx("+(255) 672 084 262")
+B.Au=new A.Gx("lucianojackson048@gmail.com")
 B.L7=new A.tc(3,"close")
 B.et=new A.w8(B.L7)
 B.eu=new A.GD(0,"mode")
