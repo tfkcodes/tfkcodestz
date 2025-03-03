@@ -77612,7 +77612,7 @@ if(a==="Skills")A.eb($.qE())
 if(a==="Contact")A.eb($.qB())},
 $S:40}
 A.qI.prototype={
-N(a){var s,r,q,p,o,n,m,l,k,j,i=null,h="I'm Oladapo Daniel Olatubosun, a Flutter Mobile Developer with over 4 years of experience crafting iOS and Android applications. I've worked on impactful projects across industries, including MoniMoore, a financial app empowering users to manage their finances efficiently, and Kunda Kids, a gamified children's learning app.\n\nSkilled in Flutter/Dart, Firebase, and state management architectures (BLoC, GetX, Provider), I deliver robust, scalable apps with clean architecture and exceptional user experiences. From GPS tracking and real-time video calls to secure payment integrations, I specialize in turning ideas into seamless, user-focused solutions."
+N(a){var s,r,q,p,o,n,m,l,k,j,i=null,h="I'm Luciano Jackson, a Flutter Mobile Developer with over 4 years of experience crafting iOS and Android applications. I've worked on impactful projects across industries, including MoniMoore, a financial app empowering users to manage their finances efficiently, and Kunda Kids, a gamified children's learning app.\n\nSkilled in Flutter/Dart, Firebase, and state management architectures (BLoC, GetX, Provider), I deliver robust, scalable apps with clean architecture and exceptional user experiences. From GPS tracking and real-time video calls to secure payment integrations, I specialize in turning ideas into seamless, user-focused solutions."
 $.bv()
 s=$.q().xr
 s=$.k.p$.x.h(0,s)
@@ -77814,7 +77814,7 @@ A.r(i).toString
 i=r.d
 if(i==null){i=self.window.devicePixelRatio
 if(i===0)i=1}i=A.bB(f,j.M(0,i).b*0.1,f)
-j=A.cr("\xa9 2025 All Rights Reserved by Oladapo Olatubosun",f,f,$.nI(),B.bp,f)
+j=A.cr("\xa9 2025 All Rights Reserved by Luciano Jackson",f,f,$.nI(),B.bp,f)
 h=$.q().xr
 h=$.k.p$.x.h(0,h)
 h.toString
@@ -78644,8 +78644,8 @@ if(o==null){o=self.window.devicePixelRatio
 if(o===0)o=1}p=p.M(0,o).a>950?B.K:B.aj
 o=t.p
 p=A.e2(A.a([A.cr("WELCOME TO MY PORTFOLIO!",g,g,$.nI().a9x(2),g,g),B.fR,new A.xl(A.oK("assets/icons/hi.gif",g,g,20),B.bf,B.EG,B.h,g)],o),B.A,p,B.B)
-n=A.cr("Oladapo",g,g,$.aBL().lh(30),g,g)
-m=A.cr("Olatubosun",g,g,$.aoz().lh(40),g,g)
+n=A.cr("tfkcodes",g,g,$.aBL().lh(30),g,g)
+m=A.cr("Luciano Jackson",g,g,$.aoz().lh(40),g,g)
 l=A.mf(B.bp,this.c,"Mobile Engineer")
 k=$.q().xr
 k=$.k.p$.x.h(0,k)
@@ -79429,7 +79429,7 @@ case 2:s=6
 return A.V(A.lJ(A.cN(u.Q,0,null)),$async$$0)
 case 6:s=3
 break
-case 4:throw A.c("Could not launch https://www.linkedin.com/in/oladapodanielolatubosun/")
+case 4:throw A.c("Could not launch https://www.linkedin.com/in/luciano-jr-1295a2237/")
 case 3:return A.R(null,r)}})
 return A.S($async$$0,r)},
 $S:10}
@@ -79437,14 +79437,14 @@ A.adi.prototype={
 $0(){var s=0,r=A.T(t.H)
 var $async$$0=A.U(function(a,b){if(a===1)return A.Q(b,r)
 while(true)switch(s){case 0:s=5
-return A.V(A.lE(A.cN("https://github.com/Dapo-dan",0,null)),$async$$0)
+return A.V(A.lE(A.cN("https://github.com/tfkcodes",0,null)),$async$$0)
 case 5:s=b?2:4
 break
 case 2:s=6
-return A.V(A.lJ(A.cN("https://github.com/Dapo-dan",0,null)),$async$$0)
+return A.V(A.lJ(A.cN("https://github.com/tfkcodes",0,null)),$async$$0)
 case 6:s=3
 break
-case 4:throw A.c("Could not launch https://github.com/Dapo-dan")
+case 4:throw A.c("Could not launch https://github.com/tfkcodes")
 case 3:return A.R(null,r)}})
 return A.S($async$$0,r)},
 $S:10}

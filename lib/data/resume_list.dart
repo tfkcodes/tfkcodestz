@@ -1,32 +1,27 @@
 final List<Map<String, String>> resumeData = [
-  // {
-  //   "title": "Mobile Engineer",
-  //   "company": "MoniMoore | Lagos, Nigeria",
-  //   "date": "Mar 2024 - Present",
-  // },
   {
-    "title": "Mobile Developer",
-    "company": "Kunda Kids | London, UK",
-    "date": "Nov 2023 - Present",
+    "title": "Software Developer",
+    "company": "Bluetick Technologies | Dar es salaam, TZ",
+    "date": "March 2024 - Present",
   },
   {
-    "title": "Mobile  Developer",
-    "company": "Exolve Technologies Limited | Lagos, Nigeria",
-    "date": "Aug 2023 - Nov 2023",
+    "title": "Frontend  Developer Intern",
+    "company": "Codeblock Limited | Dar es salaam, TZ",
+    "date": "July 2023 - March 2024",
   },
   {
-    "title": "Mobile Developer",
-    "company": "Dufuna | Lagos, Nigeria",
-    "date": "Feb 2022 - Nov 2023",
+    "title": "Software Developer",
+    "company": "PM Brand | Mwanza, TZ",
+    "date": "Aug 2023 - Present",
   },
-  // {
-  //   "title": "Flutter Developer",
-  //   "company": "TaskHaven | Lagos, Nigeria",
-  //   "date": "May 2022 - Sep 2023",
-  // },
   {
-    "title": "Mobile Developer",
-    "company": "Traipsin'Global On Wheels | Washington, US",
-    "date": "Jul 2021 - Sep 2021",
+    "title": "Digital Content Creator",
+    "company": "Shotram Digital Link | Dar es salaam, TZ",
+    "date": "Feb 2022 - Present",
+  },
+  {
+    "title": "Product Designer & Software Developer Intern",
+    "company": "MITz Group Limited | Mwanza, TZ",
+    "date": "Aug 2022 - Nov 2022",
   },
 ];

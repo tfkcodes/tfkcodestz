@@ -23,8 +23,7 @@ class SocialWidget extends StatelessWidget {
             child: IconButton(
               hoverColor: paleSlate,
               onPressed: () async {
-                const url =
-                    'https://www.linkedin.com/in/oladapodanielolatubosun/';
+                const url = 'https://www.linkedin.com/in/luciano-jr-1295a2237/';
                 if (await canLaunchUrl(Uri.parse(url))) {
                   await launchUrl(Uri.parse(url));
                 } else {
@@ -53,7 +52,7 @@ class SocialWidget extends StatelessWidget {
             child: IconButton(
               hoverColor: paleSlate,
               onPressed: () async {
-                const url = 'https://github.com/Dapo-dan';
+                const url = 'https://github.com/tfkcodes';
                 if (await canLaunchUrl(Uri.parse(url))) {
                   await launchUrl(Uri.parse(url));
                 } else {
@@ -82,8 +81,7 @@ class SocialWidget extends StatelessWidget {
             child: IconButton(
               hoverColor: paleSlate,
               onPressed: () async {
-                const url =
-                    'https://www.upwork.com/freelancers/~01ef61a88d5ca9b18c';
+                const url = 'https://wa.me/2556720842';
                 if (await canLaunchUrl(Uri.parse(url))) {
                   await launchUrl(Uri.parse(url));
                 } else {
@@ -91,7 +89,7 @@ class SocialWidget extends StatelessWidget {
                 }
               },
               icon: const FaIcon(
-                FontAwesomeIcons.upwork,
+                FontAwesomeIcons.whatsapp,
                 color: studio,
                 size: 15,
               ),
